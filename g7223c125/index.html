@@ -1,0 +1,3718 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#2563EB" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="مهامي اليومية" />
+  <title>مهامي اليومية</title>
+  <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogItmF2YfYp9mF2Yog2KfZhNmK2YjZhdmK2Kkg2YjYtdmE2KfYqSDYp9mE2LbYrdmJIiwgInNob3J0X25hbWUiOiAi2YXZh9in2YXZiiIsICJkZXNjcmlwdGlvbiI6ICLYqti32KjZitmCINil2K/Yp9ix2Kkg2KfZhNmF2YfYp9mFINin2YTZitmI2YXZitipINmI2KfZhNmF2LHZhtipINmI2YXZhtio2Ycg2LXZhNin2Kkg2KfZhNi22K3ZiSDYqNi02KjZg9ipINin2YTYrdi12LUg2KfZhNiz2LHZiti52KkiLCAic3RhcnRfdXJsIjogIi4vIiwgInNjb3BlIjogIi4vIiwgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsICJvcmllbnRhdGlvbiI6ICJwb3J0cmFpdCIsICJiYWNrZ3JvdW5kX2NvbG9yIjogIiNGMUY1RjkiLCAidGhlbWVfY29sb3IiOiAiIzI1NjNFQiIsICJkaXIiOiAicnRsIiwgImxhbmciOiAiYXIiLCAiaWNvbnMiOiBbeyJzcmMiOiAiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFNQUFBQURBQ0FZQUFBQlMzR3dIQUFBQ2owbEVRVlI0MnUzY3dZM0NRQlFGUVNkRFpJUlBFQ1lCSkM0emh1OHVwTG92NDljV0dHbVB4L04xUXRYaEVCQUFDQUFFQUFJQUFZQUFRQUFnQUJBQUNBQUVBQUlBQVlBQVFBQWdBQkFBQ0FBRUFBSUFBWUFBUUFBZ0FCQUFDQUFFQUFJQUFZQUFRQUFnQUJBQUNBQUVBQUlBQVlBQVFBQWdBQkFBQ0FBRUFBSUFBWUFBUUFBZ0FCQUFDQUFFZ0FBY0FnSUFBY0EzbjE0Q0lEbjhPOFFnQUpZTWYyb0VBbURwK0tkRklBQ1dqMzlTQkFKZ3kvaW5SQ0FBdG8xZkFLVEhQeUVDQVNBQTJQa1NBTm54QzREMCtBVkFldndDSUQxK0FXRDhBcUE0ZmdGZy9BSkFBQUxBK0FXQThRc0E0eGNBeGk4QWpGOEFHTDhBR0R0K0FlRHVMd0NNWHdBWXZ3QXdmZ0ZnL0FMQStBV0E4UXNBNHhjQWZ1Z1NBTzcrQXZqSk1JemYrRzhaUU9XaUdyOEFsbzNDK0kxL2ZBQ1ZpMno4QXRnMkN1TnZqejhmd0Q5ZmRPTVh3R1hEOEt4ZkFQblB4TzcrQXNoL0tUUitBZVMvR0JxL0FQSlBSb3hmQVBtbkk4WXZnUHpqUWVNWGdPZmozb3NBUk9BOUNNQVBSZjUrQVlqQTNWOEEyUUJXak1uNEJaQ053UGdGa0kzQStBV1FqY0Q0QlpDTndQZ0ZrSTNBK0FXUWpjQ3pmZ0drSXpCK0FXUWpNSDRCcENNd2ZnR0l3UGdGSUFMakY0QUlqRjhBSWpCK0FZakErQVVnQWdFSVFBVEdMd0FSR0w4QVJHRDhBaENCOFF0QUJNWXZBQkVZdndEU0ViZ0dBa2hINFB3RjRCOXZJWUJhQk01YkFOa0luTE1Bc2hFNFh3RmtJM0N1QXNoRzREd0ZrSTNBT1FvZ0c0SHpFMEEyQkdjbWdHd0V6a29BdVJpY2lRQkFBQ0FBRUFBSUFBUUFBZ0FCZ0FCQUFDQUFFQUFJQUFRQUFnQUJnQUJBQUNBQUVBQUlBQVFBQWdBQmdBQkFBQ0FBRUFBSUFBUUFBZ0FCZ0FBUWdFTkFBQ0FBRUFBSUFBUUFBZ0FCZ0FCQUFDQUFFQUFJQUFRQUFnQUJnQUJnampmWkNNQW5yeElOS1FBQUFBQkpSVTVFcmtKZ2dnPT0iLCAic2l6ZXMiOiAiMTkyeDE5MiIsICJ0eXBlIjogImltYWdlL3BuZyIsICJwdXJwb3NlIjogImFueSBtYXNrYWJsZSJ9LCB7InNyYyI6ICJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQWdBQUFBSUFDQVlBQUFEMGVOVDZBQUFLaUVsRVFWUjQydTNXd1EyRUlBQkZRWnF4TXNxM0NHeUFneWRqZUVNeURhd3MvNDFyM2dzQWFCbCtCQUFRQUFDQUFBQUFCQUFBSUFBQUFBRUFBQWdBQUVBQUFBQUNBQUFRQUFDQUFBQUFCQUFBSUFBQUFBRUFBQWdBQUVBQUFBQUNBQUFRQUFBZ0FBQUFBUUFBQ0FBQVFBQUFBQUlBQUJBQUFJQUFBQUFFQUFBZ0FBQUFBUUFBQ0FBQVFBQUFBQUlBQUJBQUFJQUFBQUFFQUFBZ0FBQkFBQUFBQWdBQUVBQUFnQUFBQUFRQUFDQUFBQUFCQUFBSUFBQkFBQUFBQWdBQUVBQUFnQUFBQUFRQUFDQUFBQUFCQUFBSUFBQkFBQUNBQUFBQUJBQUFJQUFBQUFFQUFBZ0FBRUFBQUFBQ0FBQVFBQUNBQUFBQUJBQUFJQUFBQUFFQUFBZ0FBRUFBQUFBQ0FBQVFBQUNBQUFBQUFlQ0hBQUFCQUFBSUFBQkFBQUFBQWdBQUVBQUFnQUFBQUFRQUFDQUFBQUFCQUFBSUFBQkFBQUFBQWdBQUVBQUFnQUFBQUFRQUFDQUFBRUFBK0JFQVFBQUFBQUlBQUJBQUFJQUFBQUFFQUFBZ0FBQUFBUUFBQ0FBQVFBQUFBQUlBQUJBQUFJQUFBQUFFQUFBZ0FBQUFBUUFBQ0FBQVFBQUFnQUFBQUFRQUFDQUFBQUFCQUFBSUFBQkFBQUFBQWdBQUVBQUFnQUFBQUFRQUFDQUFBQUFCQUFBSUFBQkFBQUFBQWdBQUVBQUFnQUFBQUFFQUFBZ0FBRUFBQUFBQ0FBQVFBQUNBQUFBQUJBQUFJQUFBQUFFQUFBZ0FBRUFBQUFBQ0FBQVFBQUNBQUFBQUJBQUFJQUFBQUFFQUFBSUFBQkFBQUlBQUFBQUVBQUFnQUFBQUFRQUFDQUFBUUFBQThLSGQ4YnNnQUFBT0gvdTN4KzhuQUFDSWpMNFlFQUIrQ0FEREx3UUVBQURsNFJjQ0FnQ0E4UEFMQVFFQVFIejhSWUFBQUNBNi9pSkFBQUFRSFg4UklBQUFpSTYvQ0JBQUFFVEhYd1FJQUFDaTR5OENCQUFBMGZFWEFBSUFnT0Q0aXdBQkFFQjAvRVdBQUFBZ092NENRQUFBRUJ4L0VTQUFBQkFBQ0FBQUt1TXZBZ1FBQU5IeEZ3QUNBSURnK0FzQUFRQkFjUHhGZ0FBQUlEcitBa0FBQUJBY2Z3RWdBQUNNZi9UNDlnSUFRQUFJQUFRQWdQRVhBQWdBQU9NdkFoQUFBTVpmQUNBQUFJeS9BRUFBQUJoLzQ0OEFBREQrQWdBQkFHRDhCUUFDQU1ENEN3QUVBSUFBRUFBSUFBRGpMd0FFZ0I4QndQZ2Jmd0VBZ1BFWEFBSUFBT012QUFRQWdQRjNqTDhBQUREK2pnQVFBQURHMy9nakFBQUVnQUJBQUFBWWYrT1BBQUF3L2dJQUFRQmcvSTAvQWdEQStCdC9CQUNBOFRmK0NBQUE0Mi84RVFBQXh0LzRJd0FBakw4QVFBQUFDQURqandBQU1QN0dId0VBR0gvSCtBc0FBT1B2R0g4QkFHRDhqVDhDQU1ENEczOEVBSUR4Ti80SUFBRGpMd0FRQUFBQ3dQZ2pBQUNNdi9GSEFBQVlmK09QQUFBdy9zWWZBUUJnL0kwL0FnREErQnQvQkFDQThUZitDQUFBNDIvOEVRQ0E4WGNFQUFJQUVBQ084VWNBQU1iZitJTUFBSXkvOFVjQUFCaC80NDhBQUREK3hoOEJBR0Q4alQ4Q0FNRDRHMzhFQUlEeEZ3QUlBQUFCWVB3UkFBREczL2dqQUFDTXYvRkhBQUFZZitPUEFBQXcvc1lmQVFBWWY4ZjRJd0FBNCs4WWZ3UUFZUHlOUHdnQXdQZ0xBQkFBZ0FBdy9pQUFBT052L0VFQUFNYmYrQ01BQUl5LzhVY0FBQmgvNDQ4QUFERCt4aDhCQUdEOGpUOENBTUQ0Q3dBRUFCNXNEeGNDd1BnakFQQkllOGd3L3Y0ekNBRFNqN1BmMmYxeS9FOFFBSVFmWjcrNSsrWDRieUFBQ0QvTXZvRTc1dmcvSUFDSVBzeStoVHZtK0I4Z0FJZyt5cjZMZTJiOFFRQVFmWlI5SC9mTStJTUFJUG9vKzA3dW1RQUFBVUQwVWZhOTNEWGpEd0tBNktQc203bG54aDhFQU5GSDJiZHp6NHcvQ0FDaWo3SnY2SjRaZnhBQVJCOW0zOUVkTS80Z0FJZyt6TDZuTytZT2d3QWcrakQ3cnU2WXV3c0NnT2pqN051NlgrNHRDQUNpRDdUdjYzNjVyeUFBaUQ3T3ZyUDc1WjZDQUNENlFQdlc3cGI3Q1FLQTZDUHRlN3RYN2lVSUFLS1B0Ty91WHJtUElBQTgxQjVkM0NuM0VBU0F4OXJqaS92ay9vRUE4R0I3aEhHWDNEc1FBQjV0anpIdWtUdUhBTUREN1VIR1BYTFhFQUI0dUQzTTdwRGpqaUVBOEhoN29OMGZ4OTFDQU9BQjkxQzdPKzRVQ0FBODRoNXM5OFpkQWdHQWg5ekQ3YzY0UXlBQThKaDd3TjBYZHdjRUFCNTBEN203NHQ2QUFNREQ3akYzVDl3WEVBQjQyRDNxN29oN0FnSUFqN3ZIM2Yxd1AwQUE0SUgzeUxzYjdnVUlBRHowSG50M3duMEFBWURIM3FQdlByZ0hJQUJFZ09QeGR3K01Qd2dBQWVEMFJzQXgvaUFBUklBVEd3TkhBSUFBRUFGT2NCQWM0dzhDUUFBNHNXRndqRDhJQUF4Q2JDQWM0dzhDQU1NUUd3ckgrSU1Bd0VERUJzTXgvaUFBTUJTeDRYQ01Qd2dBREVac1FCempEd0lBd3hFYkVrY0FnQURBZ0FUSHhESCtJQUF3SXJGUmNZdy9DQUNNU1d4Y0hPTVBBZ0NqRWhzWngvaURBTUM0eE1iR01mNGdBREF5c2RGeGpEOElBRVJBYkh3YzR3OENBQkVRR3lISCtJTUFRQVRFeHNnUkFDQUFFQUhCUVhLTVB3Z0FSRUJzbUJ6akR3SUFFUkFiS01mNGd3QkFCTVNHeWpIK0lBQVFBYkhCY293L0NBQkVRR3k0SE9NUEFnQVJFQnN3eC9pREFFQUV4SWJNRVFBZ0FCQUJ3VEZ6akQ4SUFFU0E0eGgvRUFDSUFNY3gvaUFBRUFHTzhRY0VBQ0xBTWY2QUFFQUVPTVlmRUFDSUFNZjRBd0lBRWVBWWYwQUFJQUljQVFBQ3dBK0JDSENNUHdnQUVBR084UWNCQUNMQU1mNGdBRUFFT01ZZkJBQ0lBTWY0Z3dBQUVlQVlmeEFBSUFJYzR3OENBRVNBSXdCQUFJQUlNUDZBQUVBRU9NWWZFQUNJQU1mNEF3SUFFZUFZZjBBQUlBSWM0dzhJQUVTQVkvd0JBWUFJY0l3L0lBQVFBWTd4QndRQUlzQVJBQ0FBL0FpSUFNZjRnd0FBRWVBWWZ4QUFJQUljNHc4Q0FFU0FZL3hCQUlBSWNOeEZFQUFnQW93L0lBQkFCQmgvUUFDQUNCQUFnQUFBRVdEOEFRRUFJc0Q0QXdJQVJJRHhCd1FBaUFEakR3Z0FFQUhHSHhBQUlBS01QeUFBUUFRWWYwQUFnQWd3L29BQVFBUTRBZ0FRQUlnQXgvaURBQUFSNExnaklBQkFCQmgvUUFDQUNERCtnQUFBRVdEOEFRRUFJc0Q0QXdJQVJJRHhCd1FBaUFBQkFBZ0FFQUhHSHhBQUlBS01QeUFBUUFRWWYwQUFnQWd3L29BQUFCRmcvQUVCQUNMQStBTUNBRVNBOFFjRUFMUWp3SGNEQkFBRUk4QTNBd1FBeENMQXR3SUVBTVFpd0RjQ0JBREVJc0MzQVFRQXhDTEFOd0VFQUlRaXdIY0FCQURFUXNCdkR3Z0FDSVdBM3hvUUFCQUtBYjh0SUFBZ0VnSitSMEFBUUNBSy9FYUFBQUFBQkFBQUlBQUFBQUVBQUFnQUFFQUFBQUFDQUFBRUFBQWdBQUFBQVFBQUNBQUFRQUFBQUFJQUFCQUFBSUFBQUFBRUFBQWdBQUFBQVFBQUNBQUFRQUFBQUFJQUFCQUFBSUFBQUFBRUFBQUlBQUJBQUFBQUFnQUFFQUFBZ0FBQUFBUUFBQ0FBQUFBQkFBQUlBQUJBQUFBQUFnQUFFQUFBZ0FBQUFBUUFBQ0FBQUFBQkFBQUlBQUFRQUg0RUFCQUFBSUFBQUFBRUFBQWdBQUFBQVFBQUNBQUFRQUFBQUFJQUFCQUFBSUFBQUFBRUFBQWdBQUFBQVFBQUNBQUFRQUFBQUFJQUFCQUFBQ0FBQUFBQkFBQUlBQUJBQUFBQUFnQUFFQUFBZ0FBQUFBUUFBQ0FBQUFBQkFBQUlBQUJBQUFBQUFnQUFFQUFBZ0FBQUFBUUFBQ0FBQUVBQUFBQUNBQUFRQUFDQUFBQUFCQUFBSUFBQUFBRUFBQWdBQUVBQUFBQUNBQUFRQUFDQUFBQUFCQUFBSUFBQUFBRUFBQWdBQUVBQUFJQUFBQUFFQUFBZ0FBQUFBUUFBQ0FBQVFBQUFBQUlBQUJBQUFJQUFBQUFFQUFBZ0FBQUFBUUFBQ0FBQVFBQUFBQUlBQUJBQUFJQUFBQUFCQUFBSUFBQkFBQUFBQWdBQUVBQUFnQUFBQUFRQUFDQUFBQUFCQUFBSUFBQkFBQUFBQWdBQUVBQUFnQUFBQUFRQUFDQUFBQUFCQUFBQ3dJOEFBQUlBQUJBQUFJQUFBQUFFQUFBZ0FBQUFBUUFBQ0FBQTRDY2VLK0x2T0I0VTRpQUFBQUFBU1VWT1JLNUNZSUk9IiwgInNpemVzIjogIjUxMng1MTIiLCAidHlwZSI6ICJpbWFnZS9wbmciLCAicHVycG9zZSI6ICJhbnkgbWFza2FibGUifV19" />
+  <link rel="icon" type="image/png" sizes="192x192" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAACj0lEQVR42u3cwY3CQBQFQSdDZIRPECYBJC4zhu8upLov49cWGGmPx/N1QtXhEBAACAAEAAIAAYAAQAAgABAACAAEAAIAAYAAQAAgABAACAAEAAIAAYAAQAAgABAACAAEAAIAAYAAQAAgABAACAAEAAIAAYAAQAAgABAACAAEAAIAAYAAQAAgABAACAAEgAAcAgIAAcA3n14CIDn8O8QgAJYMf2oEAmDp+KdFIACWj39SBAJgy/inRCAAto1fAKTHPyECASAA2PkSANnxC4D0+AVAevwCID1+AWD8AqA4fgFg/AJAAALA+AWA8QsA4xcAxi8AjF8AGL8AGDt+AeDuLwCMXwAYvwAwfgFg/ALA+AWA8QsA4xcAfugSAO7+AvjJMIzf+G8ZQOWiGr8Alo3C+I1/fACVi2z8Atg2CuNvjz8fwD9fdOMXwGXD8KxfAPnPxO7+Ash/KTR+AeS/GBq/APJPRoxfAPmnI8YvgPzjQeMXgOfj3osAROA9CMAPRf5+AYjA3V8A2QBWjMn4BZCNwPgFkI3A+AWQjcD4BZCNwPgFkI3A+AWQjcCzfgGkIzB+AWQjMH4BpCMwfgGIwPgFIALjF4AIjF8AIjB+AYjA+AUgAgEIQATGLwARGL8ARGD8AhCB8QtABMYvABEYvwDSEbgGAkhH4PwF4B9vIYBaBM5bANkInLMAshE4XwFkI3CuAshG4DwFkI3AOQogG4HzE0A2BGcmgGwEzkoAuRiciQBAACAAEAAIAAQAAgABgABAACAAEAAIAAQAAgABgABAACAAEAAIAAQAAgABgABAACAAEAAIAAQAAgABgAAQgENAACAAEAAIAAQAAgABgABAACAAEAAIAAQAAgABgABgjjfZCMAnrxINKQAAAABJRU5ErkJggg==" />
+  <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAACj0lEQVR42u3cwY3CQBQFQSdDZIRPECYBJC4zhu8upLov49cWGGmPx/N1QtXhEBAACAAEAAIAAYAAQAAgABAACAAEAAIAAYAAQAAgABAACAAEAAIAAYAAQAAgABAACAAEAAIAAYAAQAAgABAACAAEAAIAAYAAQAAgABAACAAEAAIAAYAAQAAgABAACAAEgAAcAgIAAcA3n14CIDn8O8QgAJYMf2oEAmDp+KdFIACWj39SBAJgy/inRCAAto1fAKTHPyECASAA2PkSANnxC4D0+AVAevwCID1+AWD8AqA4fgFg/AJAAALA+AWA8QsA4xcAxi8AjF8AGL8AGDt+AeDuLwCMXwAYvwAwfgFg/ALA+AWA8QsA4xcAfugSAO7+AvjJMIzf+G8ZQOWiGr8Alo3C+I1/fACVi2z8Atg2CuNvjz8fwD9fdOMXwGXD8KxfAPnPxO7+Ash/KTR+AeS/GBq/APJPRoxfAPmnI8YvgPzjQeMXgOfj3osAROA9CMAPRf5+AYjA3V8A2QBWjMn4BZCNwPgFkI3A+AWQjcD4BZCNwPgFkI3A+AWQjcCzfgGkIzB+AWQjMH4BpCMwfgGIwPgFIALjF4AIjF8AIjB+AYjA+AUgAgEIQATGLwARGL8ARGD8AhCB8QtABMYvABEYvwDSEbgGAkhH4PwF4B9vIYBaBM5bANkInLMAshE4XwFkI3CuAshG4DwFkI3AOQogG4HzE0A2BGcmgGwEzkoAuRiciQBAACAAEAAIAAQAAgABgABAACAAEAAIAAQAAgABgABAACAAEAAIAAQAAgABgABAACAAEAAIAAQAAgABgAAQgENAACAAEAAIAAQAAgABgABAACAAEAAIAAQAAgABgABgjjfZCMAnrxINKQAAAABJRU5ErkJggg==" />
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --primary-soft: #dbeafe;
+      --emerald: #059669;
+      --emerald-dark: #047857;
+      --emerald-soft: #d1fae5;
+      --amber-soft: #fef3c7;
+      --amber-text: #92400e;
+      --bg: #f1f5f9;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --success: #10b981;
+      --danger: #ef4444;
+      --danger-soft: #fee2e2;
+      --warning: #f59e0b;
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Tahoma, Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      padding-bottom: 96px;
+    }
+
+    .app-header {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: #fff;
+      padding: 18px 16px 20px;
+      border-bottom-left-radius: 24px;
+      border-bottom-right-radius: 24px;
+      box-shadow: 0 6px 20px rgba(37, 99, 235, 0.22);
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .app-title {
+      margin: 0;
+      font-size: 1.35rem;
+      font-weight: 800;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .offline-badge {
+      background: rgba(255, 255, 255, 0.18);
+      padding: 4px 9px;
+      border-radius: 999px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .btn-header-settings {
+      background: rgba(255, 255, 255, 0.22);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 999px;
+      padding: 5px 11px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      cursor: pointer;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .btn-header-settings:active {
+      transform: scale(0.96);
+    }
+
+    .today-date {
+      margin-top: 4px;
+      font-size: 0.85rem;
+      opacity: 0.9;
+    }
+
+    .progress-box {
+      margin-top: 12px;
+      background: rgba(255, 255, 255, 0.14);
+      padding: 10px 13px;
+      border-radius: 14px;
+    }
+
+    .progress-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.82rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      gap: 8px;
+    }
+
+    .progress-track {
+      height: 7px;
+      background: rgba(255, 255, 255, 0.25);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: #38bdf8;
+      border-radius: 999px;
+      transition: width 0.3s ease;
+    }
+
+    .container {
+      max-width: 560px;
+      margin: 0 auto;
+      padding: 12px 16px;
+    }
+
+    /* Top Navigation Switcher (المهام | صلاة الضحى) */
+    .top-nav-tabs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      background: var(--card);
+      padding: 6px;
+      border-radius: 16px;
+      border: 1.5px solid var(--border);
+      margin-bottom: 12px;
+      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+    }
+
+    .nav-tab-btn {
+      border: none;
+      background: transparent;
+      border-radius: 12px;
+      padding: 10px 8px;
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: var(--muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: all 0.16s ease;
+    }
+
+    .nav-tab-btn.active.tasks-tab {
+      background: var(--primary);
+      color: #ffffff;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+    }
+
+    .nav-tab-btn.active.duha-tab {
+      background: var(--emerald);
+      color: #ffffff;
+      box-shadow: 0 4px 12px rgba(5, 150, 105, 0.25);
+    }
+
+    .tab-mini-badge {
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 2px 7px;
+      border-radius: 999px;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .nav-tab-btn.active .tab-mini-badge {
+      background: rgba(255, 255, 255, 0.22);
+      color: #ffffff;
+    }
+
+    .tab-mini-badge.duha-done {
+      background: var(--emerald-soft);
+      color: #065f46;
+    }
+
+    .nav-tab-btn.active.duha-tab .tab-mini-badge.duha-done {
+      background: rgba(255, 255, 255, 0.25);
+      color: #ffffff;
+    }
+
+    .install-card {
+      display: none;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #fff;
+      border-radius: 16px;
+      padding: 12px 14px;
+      margin-bottom: 12px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.18);
+    }
+
+    .install-card.show {
+      display: flex;
+    }
+
+    .install-text {
+      font-size: 0.84rem;
+      line-height: 1.4;
+    }
+
+    .install-text strong {
+      display: block;
+      font-size: 0.92rem;
+      margin-bottom: 2px;
+      color: #38bdf8;
+    }
+
+    .btn-install-pwa {
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      padding: 9px 13px;
+      font-size: 0.84rem;
+      font-weight: 800;
+      cursor: pointer;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    /* Duha Dedicated Screen */
+    .duha-card {
+      background: linear-gradient(135deg, #ecfdf5 0%, #ffffff 65%);
+      border: 1.5px solid #6ee7b7;
+      border-radius: 18px;
+      padding: 16px;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 14px rgba(5, 150, 105, 0.08);
+    }
+
+    .duha-card.completed {
+      background: linear-gradient(135deg, #f0fdf4 0%, #f8fafc 100%);
+      border-color: #bbf7d0;
+    }
+
+    .duha-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .duha-title-wrap {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      flex-wrap: wrap;
+    }
+
+    .duha-title {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: #065f46;
+    }
+
+    .duha-day-chip {
+      background: var(--emerald-soft);
+      color: #065f46;
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 800;
+    }
+
+    .duha-day-chip.override {
+      background: var(--amber-soft);
+      color: var(--amber-text);
+    }
+
+    .duha-main-row {
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .duha-time-display {
+      font-size: 1.35rem;
+      font-weight: 900;
+      color: var(--text);
+    }
+
+    .duha-time-display.unset {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--muted);
+    }
+
+    .duha-period-tag {
+      display: inline-block;
+      background: #d1fae5;
+      color: #065f46;
+      font-size: 0.78rem;
+      font-weight: 800;
+      padding: 3px 9px;
+      border-radius: 8px;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+
+    .duha-sub-info {
+      margin-top: 6px;
+      font-size: 0.8rem;
+      color: #047857;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    .duha-actions {
+      margin-top: 14px;
+      display: flex;
+      gap: 8px;
+    }
+
+    .btn-duha-done {
+      flex: 1.4;
+      background: var(--emerald);
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      padding: 11px 12px;
+      font-size: 0.9rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .btn-duha-done.is-done {
+      background: #d1fae5;
+      color: #065f46;
+      border: 1px solid #6ee7b7;
+    }
+
+    .btn-duha-today-edit {
+      flex: 1;
+      background: #fffbeb;
+      color: #92400e;
+      border: 1px solid #fde68a;
+      border-radius: 12px;
+      padding: 11px 10px;
+      font-size: 0.85rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .duha-manage-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 14px;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+    }
+
+    .btn-open-grid-full {
+      width: 100%;
+      background: #ecfdf5;
+      color: #065f46;
+      border: 1.5px solid #6ee7b7;
+      border-radius: 13px;
+      padding: 12px 14px;
+      font-size: 0.92rem;
+      font-weight: 800;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .week-summary-list {
+      margin-top: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .week-summary-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--bg);
+      padding: 8px 12px;
+      border-radius: 10px;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .week-summary-item.today-highlight {
+      background: #d1fae5;
+      color: #065f46;
+      border: 1px solid #6ee7b7;
+    }
+
+    .control-card {
+      background: var(--card);
+      border: 1.5px solid var(--primary-soft);
+      border-radius: 16px;
+      padding: 12px;
+      margin-bottom: 12px;
+    }
+
+    .sound-row {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .btn-pick-device-sound {
+      flex: 1.1;
+      background: #eff6ff;
+      color: var(--primary-dark);
+      border: 1px solid #bfdbfe;
+      border-radius: 12px;
+      padding: 10px 8px;
+      font-size: 0.81rem;
+      font-weight: 800;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+    }
+
+    .btn-sound-opts {
+      flex: 1.25;
+      background: #f8fafc;
+      color: var(--text);
+      border: 1.5px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 10px 8px;
+      font-size: 0.81rem;
+      font-weight: 800;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+    }
+
+    .btn-sound {
+      flex: 0.85;
+      background: var(--primary-soft);
+      color: var(--primary-dark);
+      border: none;
+      border-radius: 12px;
+      padding: 10px 8px;
+      font-size: 0.81rem;
+      font-weight: 800;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+    }
+
+    .selected-sound-info {
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      font-size: 0.79rem;
+      color: var(--muted);
+    }
+
+    .sound-name-badge {
+      font-weight: 700;
+      color: var(--text);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 72%;
+    }
+
+    .btn-reset-sound {
+      background: #fff1f2;
+      border: 1px solid #fecdd3;
+      border-radius: 8px;
+      color: var(--danger);
+      font-size: 0.76rem;
+      font-weight: 800;
+      cursor: pointer;
+      padding: 3px 8px;
+      white-space: nowrap;
+    }
+
+    .nudge-row {
+      margin-top: 9px;
+      padding-top: 9px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .nudge-label {
+      font-size: 0.84rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .nudge-select {
+      background: var(--bg);
+      color: var(--primary-dark);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 7px 10px;
+      font-size: 0.84rem;
+      font-weight: 700;
+    }
+
+    .filter-tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 12px;
+      overflow-x: auto;
+    }
+
+    .filter-chip {
+      background: var(--card);
+      color: var(--muted);
+      border: 1.5px solid var(--border);
+      border-radius: 999px;
+      padding: 7px 14px;
+      font-size: 0.84rem;
+      font-weight: 700;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .filter-chip.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    .alert-banner {
+      display: none;
+      background: #fef3c7;
+      border: 1.5px solid var(--warning);
+      color: #92400e;
+      padding: 14px;
+      border-radius: 16px;
+      margin-bottom: 12px;
+      animation: pulse 1.2s infinite;
+    }
+
+    .alert-banner.duha-alert {
+      background: #ecfdf5;
+      border-color: var(--emerald);
+      color: #065f46;
+    }
+
+    .alert-banner.active {
+      display: block;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.01); }
+    }
+
+    .alert-banner-title {
+      font-weight: 800;
+      font-size: 0.98rem;
+      margin-bottom: 4px;
+    }
+
+    .alert-banner-actions {
+      margin-top: 10px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .btn-stop-alert {
+      background: var(--warning);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 8px 14px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .btn-duha-banner-done {
+      background: var(--emerald);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 8px 14px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .btn-duha-banner-snooze {
+      background: #ffffff;
+      color: #065f46;
+      border: 1px solid #6ee7b7;
+      border-radius: 10px;
+      padding: 8px 12px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .task-list {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .task-card {
+      background: var(--card);
+      border-radius: 15px;
+      padding: 12px 13px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+      border: 1px solid var(--border);
+    }
+
+    .task-card.done {
+      opacity: 0.58;
+    }
+
+    .task-check {
+      width: 23px;
+      height: 23px;
+      margin-top: 2px;
+      accent-color: var(--primary);
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .task-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .task-title {
+      font-size: 0.98rem;
+      font-weight: 700;
+      word-break: break-word;
+      line-height: 1.4;
+    }
+
+    .task-extra-lines {
+      margin-top: 4px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--muted);
+      white-space: pre-line;
+      word-break: break-word;
+      line-height: 1.45;
+      background: #f8fafc;
+      padding: 5px 8px;
+      border-radius: 8px;
+      border-right: 2.5px solid #cbd5e1;
+    }
+
+    .task-card.done .task-title,
+    .task-card.done .task-extra-lines {
+      text-decoration: line-through;
+      color: var(--muted);
+    }
+
+    .task-meta {
+      margin-top: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .time-badge {
+      background: var(--primary-soft);
+      color: var(--primary-dark);
+      padding: 3px 8px;
+      border-radius: 8px;
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    .time-badge.flexible {
+      background: var(--amber-soft);
+      color: var(--amber-text);
+    }
+
+    .priority-badge {
+      background: #fee2e2;
+      color: #b91c1c;
+      padding: 2px 7px;
+      border-radius: 6px;
+      font-size: 0.74rem;
+      font-weight: 800;
+    }
+
+    .task-card-actions {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+
+    .btn-assign-time {
+      background: var(--primary-soft);
+      color: var(--primary-dark);
+      border: none;
+      border-radius: 9px;
+      padding: 6px 9px;
+      font-size: 0.76rem;
+      font-weight: 800;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .btn-delete {
+      background: var(--danger-soft);
+      color: var(--danger);
+      border: none;
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 46px 18px;
+      color: var(--muted);
+      background: var(--card);
+      border-radius: 18px;
+      border: 1px dashed #cbd5e1;
+    }
+
+    .empty-state h3 {
+      margin: 0 0 6px;
+      color: var(--text);
+      font-size: 1.05rem;
+    }
+
+    .fab {
+      position: fixed;
+      bottom: 22px;
+      left: 20px;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 999px;
+      padding: 15px 22px;
+      font-size: 1rem;
+      font-weight: 800;
+      box-shadow: 0 8px 22px rgba(37, 99, 235, 0.35);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      z-index: 20;
+    }
+
+    .modal-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.55);
+      z-index: 50;
+      align-items: flex-end;
+      justify-content: center;
+    }
+
+    .modal-backdrop.open {
+      display: flex;
+    }
+
+    .modal-backdrop.center-modal {
+      align-items: center;
+      padding: 18px;
+      z-index: 80;
+    }
+
+    .modal-sheet {
+      background: var(--card);
+      width: 100%;
+      max-width: 560px;
+      max-height: 92vh;
+      overflow-y: auto;
+      border-top-left-radius: 24px;
+      border-top-right-radius: 24px;
+      padding: 20px 16px 26px;
+      animation: slideUp 0.22s ease-out;
+    }
+
+    .confirm-box {
+      background: var(--card);
+      width: 100%;
+      max-width: 400px;
+      border-radius: 22px;
+      padding: 22px 20px;
+      text-align: center;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.28);
+      animation: popIn 0.18s ease-out;
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(100%); }
+      to { transform: translateY(0); }
+    }
+
+    @keyframes popIn {
+      from { transform: scale(0.92); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .confirm-icon {
+      font-size: 2.2rem;
+      margin-bottom: 8px;
+    }
+
+    .confirm-title {
+      margin: 0 0 8px;
+      font-size: 1.12rem;
+      font-weight: 800;
+      color: var(--text);
+    }
+
+    .confirm-msg {
+      margin: 0 0 18px;
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .confirm-actions {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn-confirm-danger {
+      flex: 1.3;
+      background: var(--danger);
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      padding: 12px;
+      font-size: 0.95rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .modal-title {
+      margin: 0 0 12px;
+      font-size: 1.15rem;
+      font-weight: 800;
+    }
+
+    .form-group {
+      margin-bottom: 13px;
+    }
+
+    .form-label-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+
+    .form-label-row .form-label {
+      margin-bottom: 0;
+    }
+
+    .newline-hint {
+      font-size: 0.74rem;
+      color: var(--primary-dark);
+      background: var(--primary-soft);
+      padding: 2px 8px;
+      border-radius: 6px;
+      font-weight: 700;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      font-size: 1rem;
+      outline: none;
+      line-height: 1.5;
+    }
+
+    .form-textarea {
+      resize: vertical;
+      min-height: 82px;
+    }
+
+    .form-input:focus {
+      border-color: var(--primary);
+    }
+
+    /* Flexible Interval Selector inside Add Task Modal */
+    .flex-interval-box {
+      background: #fffbeb;
+      border: 1.5px solid #fde68a;
+      border-radius: 14px;
+      padding: 11px 12px;
+    }
+
+    .flex-interval-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 7px;
+      margin-top: 7px;
+    }
+
+    .flex-pill-btn {
+      background: #ffffff;
+      border: 1.5px solid #fcd34d;
+      border-radius: 10px;
+      padding: 8px 6px;
+      font-size: 0.81rem;
+      font-weight: 800;
+      color: #78350f;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.12s ease;
+    }
+
+    .flex-pill-btn.active {
+      background: #d97706;
+      border-color: #b45309;
+      color: #ffffff;
+      box-shadow: 0 2px 6px rgba(217, 119, 6, 0.28);
+    }
+
+    /* Direct Numeric Time Input Widget */
+    .numeric-time-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--bg);
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      padding: 10px 12px;
+      direction: ltr;
+    }
+
+    .numeric-time-box.compact {
+      padding: 4px 7px;
+      border-radius: 10px;
+      gap: 4px;
+      background: #fff;
+    }
+
+    .time-part-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .time-part-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: var(--muted);
+      margin-bottom: 2px;
+    }
+
+    .num-time-input {
+      width: 64px;
+      height: 46px;
+      text-align: center;
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--text);
+      background: #ffffff;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 11px;
+      outline: none;
+    }
+
+    .numeric-time-box.compact .num-time-input {
+      width: 40px;
+      height: 32px;
+      font-size: 0.95rem;
+      border-radius: 8px;
+    }
+
+    .num-time-input:focus {
+      border-color: var(--primary);
+      background: #eff6ff;
+    }
+
+    .time-colon {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--text);
+      margin-top: 12px;
+    }
+
+    .numeric-time-box.compact .time-colon {
+      font-size: 1rem;
+      margin-top: 0;
+    }
+
+    .ampm-toggle-btn {
+      height: 46px;
+      min-width: 66px;
+      margin-top: 14px;
+      border-radius: 11px;
+      border: 1.5px solid #93c5fd;
+      background: #dbeafe;
+      color: #1e40af;
+      font-size: 0.98rem;
+      font-weight: 800;
+      cursor: pointer;
+      padding: 0 10px;
+    }
+
+    .ampm-toggle-btn.pm {
+      background: #312e81;
+      border-color: #312e81;
+      color: #ffffff;
+    }
+
+    .numeric-time-box.compact .ampm-toggle-btn {
+      height: 32px;
+      min-width: 38px;
+      margin-top: 0;
+      font-size: 0.82rem;
+      border-radius: 8px;
+      padding: 0 5px;
+    }
+
+    .type-selector {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .type-option {
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-weight: 700;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .type-option.selected {
+      border-color: var(--primary);
+      background: var(--primary-soft);
+      color: var(--primary-dark);
+    }
+
+    .priority-toggle-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff1f2;
+      border: 1px solid #fecdd3;
+      padding: 10px 12px;
+      border-radius: 12px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #9f1239;
+    }
+
+    .quick-presets {
+      display: flex;
+      gap: 6px;
+      margin-top: 8px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .preset-btn {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      padding: 6px 10px;
+      font-size: 0.79rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      cursor: pointer;
+    }
+
+    /* Quick Period Grid Styling */
+    .bell-settings-box {
+      background: #f8fafc;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 14px;
+      padding: 11px;
+      margin-bottom: 12px;
+    }
+
+    .bell-settings-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 9px;
+    }
+
+    .bell-grid-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .bell-field {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 7px 9px;
+    }
+
+    .bell-field-label {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .bell-num-input {
+      width: 100%;
+      padding: 5px 8px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 800;
+      text-align: center;
+      color: var(--text);
+    }
+
+    .bell-select {
+      width: 100%;
+      padding: 6px 6px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--text);
+      background: #fff;
+    }
+
+    .buffer-pills {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      margin-top: 6px;
+      flex-wrap: wrap;
+    }
+
+    .buffer-pill {
+      background: #fff;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      padding: 4px 9px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      color: var(--text);
+      cursor: pointer;
+    }
+
+    .buffer-pill.active {
+      background: var(--emerald);
+      border-color: var(--emerald);
+      color: #fff;
+    }
+
+    .bell-preview-strip {
+      margin-top: 9px;
+      padding-top: 8px;
+      border-top: 1px dashed #cbd5e1;
+      display: flex;
+      gap: 5px;
+      overflow-x: auto;
+      padding-bottom: 2px;
+    }
+
+    .preview-period-pill {
+      background: #e2e8f0;
+      color: #334155;
+      border-radius: 7px;
+      padding: 3px 7px;
+      font-size: 0.71rem;
+      font-weight: 700;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .preview-period-pill.break {
+      background: #fef3c7;
+      color: #92400e;
+    }
+
+    .period-day-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      padding: 9px 10px;
+      margin-bottom: 8px;
+    }
+
+    .period-day-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 7px;
+      gap: 6px;
+    }
+
+    .period-day-title {
+      font-size: 0.92rem;
+      font-weight: 800;
+      color: var(--text);
+    }
+
+    .period-day-result {
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: var(--emerald-dark);
+      background: var(--emerald-soft);
+      padding: 2px 8px;
+      border-radius: 999px;
+    }
+
+    .period-day-result.empty {
+      color: var(--muted);
+      background: #e2e8f0;
+    }
+
+    .period-chips-row {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 5px;
+    }
+
+    .period-chip-btn {
+      background: #ffffff;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 9px;
+      padding: 7px 2px;
+      text-align: center;
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: var(--text);
+      cursor: pointer;
+      transition: all 0.12s ease;
+    }
+
+    .period-chip-btn.selected-secondary {
+      background: #d1fae5;
+      border-color: #34d399;
+      color: #065f46;
+    }
+
+    .period-chip-btn.selected-primary {
+      background: var(--emerald);
+      border-color: var(--emerald-dark);
+      color: #ffffff;
+      box-shadow: 0 2px 6px rgba(5, 150, 105, 0.3);
+    }
+
+    .duha-sound-box {
+      background: #ecfdf5;
+      border: 1px solid #a7f3d0;
+      border-radius: 14px;
+      padding: 11px;
+      margin-bottom: 12px;
+    }
+
+    .backup-row {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 10px;
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      flex-wrap: wrap;
+    }
+
+    /* Sound Options Modal Styling */
+    .option-group-box {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 12px;
+      margin-bottom: 12px;
+    }
+
+    .tone-category-label {
+      font-size: 0.75rem;
+      font-weight: 800;
+      color: var(--muted);
+      margin: 8px 0 5px;
+    }
+
+    .option-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: 6px;
+    }
+
+    .opt-pill {
+      background: #fff;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      padding: 8px 11px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--text);
+      cursor: pointer;
+      transition: all 0.12s ease;
+    }
+
+    .opt-pill.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25);
+    }
+
+    .opt-pill.duha-pill.active {
+      background: var(--emerald);
+      border-color: var(--emerald);
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(5, 150, 105, 0.25);
+    }
+
+    .modal-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .btn-save {
+      flex: 2;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      padding: 13px;
+      font-size: 1rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .btn-save.emerald {
+      background: var(--emerald);
+    }
+
+    .btn-cancel {
+      flex: 1;
+      background: var(--bg);
+      color: var(--text);
+      border: none;
+      border-radius: 12px;
+      padding: 13px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .toast {
+      position: fixed;
+      top: 18px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #0f172a;
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-size: 0.86rem;
+      font-weight: 700;
+      z-index: 120;
+      display: none;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+      text-align: center;
+      max-width: 90%;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="app-header">
+    <div class="header-top">
+      <h1 class="app-title">مهامي اليومية</h1>
+      <div class="header-actions">
+        <span class="offline-badge" id="appModeBadge">تطبيق ذكي ✓</span>
+        <button class="btn-header-settings" id="btnOpenTaskSettings" type="button" title="إعدادات الصوت والتذكير">
+          <span>⚙️</span>
+          <span>الصوت</span>
+        </button>
+      </div>
+    </div>
+    <div class="today-date" id="todayDate"></div>
+    <div class="progress-box">
+      <div class="progress-row">
+        <span id="progressText">الإنجاز: 0 من 0</span>
+        <span id="flexSummaryText">مرنة متبقية: 0</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="install-card" id="installBanner">
+      <div class="install-text">
+        <strong>📲 ثبّت التطبيق على هاتفك</strong>
+        <span>أضفه إلى شاشة التطبيقات ليعمل كتطبيق مستقل</span>
+      </div>
+      <button class="btn-install-pwa" id="btnInstallApp" type="button">تثبيت الآن</button>
+    </div>
+
+    <!-- Top Navigation Bar: Tasks vs Duha Prayer -->
+    <nav class="top-nav-tabs" aria-label="التنقل الرئيسي">
+      <button class="nav-tab-btn tasks-tab active" id="navBtnTasks" type="button">
+        <span>📋</span>
+        <span>المهام</span>
+        <span class="tab-mini-badge" id="tasksTabBadge">0</span>
+      </button>
+      <button class="nav-tab-btn duha-tab" id="navBtnDuha" type="button">
+        <span>🕌</span>
+        <span>صلاة الضحى</span>
+        <span class="tab-mini-badge" id="duhaTabBadge">--</span>
+      </button>
+    </nav>
+
+    <!-- Active Alert Banner -->
+    <div class="alert-banner" id="alertBanner">
+      <div class="alert-banner-title" id="alertBannerTitle">تنبيه!</div>
+      <div id="alertBannerDesc"></div>
+      <div class="alert-banner-actions" id="alertBannerActions">
+        <button class="btn-stop-alert" id="btnDismissAlert" type="button">إيقاف الصوت وإغلاق</button>
+      </div>
+    </div>
+
+    <!-- VIEW 1: TASKS SCREEN -->
+    <section id="viewTasks">
+      <div class="filter-tabs">
+        <button class="filter-chip active" data-filter="all" type="button">الكل</button>
+        <button class="filter-chip" data-filter="flexible" type="button">مرنة (خلال اليوم)</button>
+        <button class="filter-chip" data-filter="timed" type="button">بوقت محدد</button>
+      </div>
+
+      <div id="taskList" class="task-list"></div>
+    </section>
+
+    <!-- VIEW 2: DUHA PRAYER DEDICATED SCREEN -->
+    <section id="viewDuha" style="display:none;">
+      <div class="duha-card" id="duhaCard">
+        <div class="duha-header">
+          <div class="duha-title-wrap">
+            <span class="duha-title">🕌 صلاة الضحى</span>
+            <span class="duha-day-chip" id="duhaDayChip">اليوم</span>
+          </div>
+        </div>
+        <div class="duha-main-row">
+          <div>
+            <div class="duha-time-display" id="duhaTimeDisplay">لم يُحدد وقت اليوم</div>
+            <div class="duha-sub-info" id="duhaSubInfo">اضغط على "شبكة الحصص" بالأسفل لضبط أوقات فراغك</div>
+          </div>
+        </div>
+        <div class="duha-actions">
+          <button class="btn-duha-done" id="btnToggleDuhaDone" type="button">✓ تمت الصلاة</button>
+          <button class="btn-duha-today-edit" id="btnEditDuhaToday" type="button">✏️ تعديل لليوم فقط</button>
+        </div>
+      </div>
+
+      <div class="duha-manage-card">
+        <button class="btn-open-grid-full" id="btnOpenDuhaSchedule" type="button">
+          <span>⚙️</span>
+          <span>ضبط شبكة الحصص ونغمة صلاة الضحى</span>
+        </button>
+        <div class="week-summary-list" id="duhaWeekSummaryList"></div>
+      </div>
+    </section>
+  </main>
+
+  <button class="fab" id="btnOpenModal" type="button">
+    <span>+</span>
+    <span>إضافة مهمة</span>
+  </button>
+
+  <!-- Modal 1: Add / Edit Task -->
+  <div class="modal-backdrop" id="taskModal">
+    <div class="modal-sheet">
+      <h2 class="modal-title" id="modalHeading">إضافة مهمة جديدة</h2>
+      <div class="form-group">
+        <div class="form-label-row">
+          <label class="form-label" for="taskTitleInput">المهمة والتفاصيل</label>
+          <span class="newline-hint">↵ Enter للنزول لسطر جديد</span>
+        </div>
+        <textarea class="form-input form-textarea" id="taskTitleInput" rows="3" placeholder="اكتب المهمة في السطر الأول...&#10;وانزل لسطر ثانٍ لكتابة أي تفاصيل إضافية"></textarea>
+      </div>
+
+      <div class="form-group" id="typeSelectorGroup">
+        <label class="form-label">نوع التوقيت</label>
+        <div class="type-selector">
+          <div class="type-option selected" id="optFlexible">⚡ مرنة (خلال اليوم)</div>
+          <div class="type-option" id="optTimed">⏰ بوقت محدد</div>
+        </div>
+      </div>
+
+      <!-- Flexible Reminder Interval Options -->
+      <div class="form-group" id="flexibleIntervalGroup">
+        <div class="flex-interval-box">
+          <span class="form-label" style="color:#92400e;margin-bottom:2px;">⏰ متى أذكّرك بهذه المهمة المرنة؟</span>
+          <div class="flex-interval-grid" id="flexIntervalPills">
+            <button type="button" class="flex-pill-btn" data-hours="1">بعد ساعة</button>
+            <button type="button" class="flex-pill-btn active" data-hours="2">بعد ساعتين</button>
+            <button type="button" class="flex-pill-btn" data-hours="3">بعد 3 ساعات</button>
+            <button type="button" class="flex-pill-btn" data-hours="4">بعد 4 ساعات</button>
+            <button type="button" class="flex-pill-btn" data-hours="5">بعد 5 ساعات</button>
+            <button type="button" class="flex-pill-btn" data-hours="0">بدون تنبيه</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group" id="timeInputGroup" style="display:none;">
+        <label class="form-label">اكتب وقت التنبيه (الساعة والدقيقة)</label>
+        <div id="taskNumericTimeMount"></div>
+        <div class="quick-presets">
+          <button class="preset-btn" type="button" data-mins="1">بعد دقيقة (تجربة)</button>
+          <button class="preset-btn" type="button" data-mins="15">بعد 15 د</button>
+          <button class="preset-btn" type="button" data-mins="30">بعد 30 د</button>
+          <button class="preset-btn" type="button" data-mins="60">بعد ساعة</button>
+        </div>
+      </div>
+
+      <div class="form-group" id="priorityGroup">
+        <label class="priority-toggle-row">
+          <span>⭐ تمييز كـ أولوية عالية</span>
+          <input type="checkbox" id="taskPriorityInput" style="width:20px;height:20px;accent-color:#e11d48;" />
+        </label>
+      </div>
+
+      <div class="modal-actions">
+        <button class="btn-save" id="btnSaveTask" type="button">حفظ المهمة</button>
+        <button class="btn-cancel" id="btnCloseModal" type="button">إلغاء</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Quick Period Grid for Duha Prayer -->
+  <div class="modal-backdrop" id="duhaScheduleModal">
+    <div class="modal-sheet">
+      <h2 class="modal-title">🕌 شبكة الحصص السريعة لصلاة الضحى</h2>
+
+      <div class="duha-sound-box">
+        <div class="sound-row">
+          <button class="btn-sound-opts" id="btnOpenDuhaSoundOpts" type="button" style="background:#fff;border-color:#6ee7b7;color:#065f46;flex:1.4;">
+            <span>🎵</span>
+            <span>اختيار نغمة الضحى</span>
+          </button>
+          <button class="btn-pick-device-sound" id="btnPickDuhaSound" type="button" style="background:#fff;border-color:#a7f3d0;color:#065f46;flex:1;">
+            <span>📁</span>
+            <span>من الجهاز</span>
+          </button>
+          <button class="btn-sound" id="btnTestDuhaSound" type="button" style="background:#d1fae5;color:#065f46;flex:0.8;">
+            <span>🔔</span>
+            <span>تجربة</span>
+          </button>
+        </div>
+        <input type="file" id="duhaAudioInput" accept="audio/*" style="display:none;" />
+        <div class="selected-sound-info" style="border-top-color:#a7f3d0;">
+          <span class="sound-name-badge" id="duhaSoundNameBadge">الصوت: نغمة رخيمة متدرجة (3 مرات)</span>
+          <button class="btn-reset-sound" id="btnResetDuhaSound" type="button" style="display:none;">استعادة الافتراضي</button>
+        </div>
+      </div>
+
+      <div class="bell-settings-box">
+        <div class="bell-settings-header">
+          <span>🔔 إعدادات الجرس المدرسي (تُضبط مرة واحدة)</span>
+        </div>
+
+        <div class="bell-grid-2col">
+          <div class="bell-field">
+            <span class="bell-field-label">بداية الحصة الأولى</span>
+            <div id="firstPeriodTimeMount"></div>
+          </div>
+          <div class="bell-field">
+            <span class="bell-field-label">مدة الحصة (بالدقائق)</span>
+            <input type="number" inputmode="numeric" id="periodDurInput" class="bell-num-input" min="20" max="90" value="40" />
+          </div>
+        </div>
+
+        <div class="bell-grid-2col">
+          <div class="bell-field">
+            <span class="bell-field-label">الفسحة / الاستراحة</span>
+            <select id="breakAfterSelect" class="bell-select">
+              <option value="0">بدون فسحة</option>
+              <option value="1">بعد الحصة الأولى</option>
+              <option value="2">بعد الحصة الثانية</option>
+              <option value="3" selected>بعد الحصة الثالثة</option>
+              <option value="4">بعد الحصة الرابعة</option>
+            </select>
+          </div>
+          <div class="bell-field">
+            <span class="bell-field-label">مدة الفسحة (بالدقائق)</span>
+            <input type="number" inputmode="numeric" id="breakDurInput" class="bell-num-input" min="5" max="60" value="20" />
+          </div>
+        </div>
+
+        <div class="buffer-pills">
+          <span style="font-size:0.76rem;font-weight:700;color:var(--muted);">دقائق سماح بعد الجرس:</span>
+          <button type="button" class="buffer-pill" data-buf="0">0 د</button>
+          <button type="button" class="buffer-pill active" data-buf="5">5 دقائق</button>
+          <button type="button" class="buffer-pill" data-buf="10">10 دقائق</button>
+        </div>
+
+        <div class="bell-preview-strip" id="bellPreviewStrip"></div>
+      </div>
+
+      <div class="form-label">اضغط على الحصص الفارغة لديك في كل يوم (ح1 إلى ح7):</div>
+      <div id="duhaDaysGridContainer"></div>
+
+      <div class="backup-row">
+        <label style="display:flex;align-items:center;gap:8px;cursor:pointer;">
+          <input type="checkbox" id="duhaBackupCheck" style="width:18px;height:18px;accent-color:#059669;" />
+          <span>تنبيه احتياطي قبل الظهر:</span>
+        </label>
+        <div id="duhaBackupTimeMount"></div>
+      </div>
+
+      <div class="modal-actions">
+        <button class="btn-save emerald" id="btnSaveDuhaSchedule" type="button">حفظ الجدول</button>
+        <button class="btn-cancel" id="btnCloseDuhaSchedule" type="button">إلغاء</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: One-Day Exception for Duha Prayer -->
+  <div class="modal-backdrop" id="duhaTodayModal">
+    <div class="modal-sheet">
+      <h2 class="modal-title">✏️ تعديل وقت صلاة الضحى لليوم فقط</h2>
+      <p style="margin:0 0 12px;font-size:0.86rem;color:var(--muted);">
+        اكتب الساعة والدقيقة المناسبة لليوم فقط (في حال حصة احتياط أو تبديل) دون تغيير جدولك الأسبوعي:
+      </p>
+      <div class="form-group">
+        <label class="form-label">وقت صلاة الضحى اليوم</label>
+        <div id="duhaTodayTimeMount"></div>
+        <div class="quick-presets">
+          <button class="preset-btn duha-preset" type="button" data-mins="1">بعد دقيقة (تجربة)</button>
+          <button class="preset-btn duha-preset" type="button" data-mins="15">بعد 15 د</button>
+          <button class="preset-btn duha-preset" type="button" data-mins="30">بعد 30 د</button>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button class="btn-save emerald" id="btnSaveDuhaToday" type="button">حفظ لليوم</button>
+        <button class="btn-cancel" id="btnResetDuhaToday" type="button" style="color:var(--danger);">إلغاء الاستثناء</button>
+        <button class="btn-cancel" id="btnCloseDuhaToday" type="button">إغلاق</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: Advanced Sound Options with 7 Built-in Professional Ringtones -->
+  <div class="modal-backdrop" id="soundOptionsModal" style="z-index: 65;">
+    <div class="modal-sheet">
+      <h2 class="modal-title" id="soundOptsTitle">🎚️ اختيار النغمة وخيارات الصوت</h2>
+
+      <div class="option-group-box">
+        <div class="form-label">1. اختر النغمة (اضغط على أي نغمة لسماعها فوراً)</div>
+
+        <div class="tone-category-label">🕌 نغمات هادئة ورخيمة (مناسبة لصلاة الضحى):</div>
+        <div class="option-pills" id="toneSourcePillsCalm">
+          <button type="button" class="opt-pill" data-tone="chime">🎶 نغمة رخيمة متدرجة</button>
+          <button type="button" class="opt-pill" data-tone="strings">🎻 وتريات ناعمة</button>
+          <button type="button" class="opt-pill" data-tone="water">💧 قطرات الماء</button>
+        </div>
+
+        <div class="tone-category-label">🔔 نغمات واضحة ونشطة (مناسبة للمهام والتنبيهات):</div>
+        <div class="option-pills" id="toneSourcePillsTasks">
+          <button type="button" class="opt-pill" data-tone="marimba">🎹 ماريمبا حديثة</button>
+          <button type="button" class="opt-pill" data-tone="crystal">✨ إشعار كريستالي</button>
+          <button type="button" class="opt-pill" data-tone="bell3">🔔 جرس تنبيه مزدوج</button>
+          <button type="button" class="opt-pill" data-tone="classic">⏰ منبه رنين قوي</button>
+          <button type="button" class="opt-pill" data-tone="device">📁 ملف الجهاز المختار</button>
+        </div>
+      </div>
+
+      <div class="option-group-box">
+        <div class="form-label">2. تكرار الرنين (حتى تنتبه للتنبيه)</div>
+        <div class="option-pills" id="repeatModePills">
+          <button type="button" class="opt-pill" data-repeat="once">مرة واحدة</button>
+          <button type="button" class="opt-pill" data-repeat="3x">تكرار 3 مرات</button>
+          <button type="button" class="opt-pill" data-repeat="loop">رنين مستمر حتى أوقفه</button>
+        </div>
+      </div>
+
+      <div class="option-group-box" id="deviceTrimBox">
+        <div class="form-label">3. نقطة بداية الصوت (لتخطي المقدمة الهادئة في ملف الجهاز)</div>
+        <div class="option-pills" id="startSecPills">
+          <button type="button" class="opt-pill" data-start="0">من البداية (0 ث)</button>
+          <button type="button" class="opt-pill" data-start="5">من الثانية 5</button>
+          <button type="button" class="opt-pill" data-start="10">من الثانية 10</button>
+          <button type="button" class="opt-pill" data-start="15">من الثانية 15</button>
+          <button type="button" class="opt-pill" data-start="30">من الثانية 30</button>
+        </div>
+        <div class="form-label" style="margin-top:10px;">مدة المقطع في كل رنة</div>
+        <div class="option-pills" id="clipDurPills">
+          <button type="button" class="opt-pill" data-dur="0">كامل المقطع</button>
+          <button type="button" class="opt-pill" data-dur="5">5 ثوانٍ</button>
+          <button type="button" class="opt-pill" data-dur="10">10 ثوانٍ</button>
+          <button type="button" class="opt-pill" data-dur="15">15 ثانية</button>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button class="btn-save" id="btnSaveAndTestSoundOpts" type="button">حفظ وتجربة النغمة الآن</button>
+        <button class="btn-cancel" id="btnCloseSoundOpts" type="button">إغلاق</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5: Confirmation Dialog -->
+  <div class="modal-backdrop center-modal" id="confirmModal">
+    <div class="confirm-box">
+      <div class="confirm-icon" id="confirmIcon">⚠️</div>
+      <h3 class="confirm-title" id="confirmTitle">تأكيد الإجراء</h3>
+      <p class="confirm-msg" id="confirmMessage">هل أنت متأكد؟</p>
+      <div class="confirm-actions">
+        <button class="btn-confirm-danger" id="btnConfirmYes" type="button">نعم، متأكد</button>
+        <button class="btn-cancel" id="btnConfirmNo" type="button">إلغاء</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6: Task Sound & Default Flexible Reminder Settings -->
+  <div class="modal-backdrop" id="taskSettingsModal">
+    <div class="modal-sheet">
+      <h2 class="modal-title">⚙️ إعدادات صوت المهام والتذكير الافتراضي</h2>
+      <div class="control-card">
+        <div class="sound-row">
+          <button class="btn-sound-opts" id="btnOpenTaskSoundOpts" type="button">
+            <span>🎵</span>
+            <span>اختيار النغمة</span>
+          </button>
+          <button class="btn-pick-device-sound" id="btnPickDeviceSound" type="button">
+            <span>📁</span>
+            <span>من الجهاز</span>
+          </button>
+          <button class="btn-sound" id="btnTestSound" type="button">
+            <span>🔔</span>
+            <span>تجربة</span>
+          </button>
+        </div>
+        <input type="file" id="deviceAudioInput" accept="audio/*" style="display:none;" />
+        <div class="selected-sound-info">
+          <span class="sound-name-badge" id="selectedSoundName">الصوت: ماريمبا حديثة (3 مرات)</span>
+          <button class="btn-reset-sound" id="btnResetSound" type="button" style="display:none;">استعادة الافتراضي</button>
+        </div>
+        <div class="nudge-row">
+          <span class="nudge-label">⏰ الافتراضي للمهام المرنة:</span>
+          <select class="nudge-select" id="nudgeIntervalSelect" aria-label="التكرار الافتراضي للمهام المرنة">
+            <option value="1">كل ساعة</option>
+            <option value="2" selected>كل ساعتين</option>
+            <option value="3">كل 3 ساعات</option>
+            <option value="4">كل 4 ساعات</option>
+            <option value="5">كل 5 ساعات</option>
+            <option value="0">بدون تنبيه</option>
+          </select>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button class="btn-save" id="btnCloseTaskSettings" type="button">تم</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script>
+    // Storage Keys
+    const STORAGE_KEY = 'my_daily_tasks_pwa_v3';
+    const SOUND_NAME_KEY = 'my_daily_tasks_sound_name';
+    const SOUND_DATA_KEY = 'my_daily_tasks_sound_data';
+    const TASK_SOUND_OPTS_KEY = 'my_daily_tasks_sound_opts_v1';
+    const NUDGE_INTERVAL_KEY = 'my_daily_tasks_nudge_hours';
+    const LAST_NUDGE_KEY = 'my_daily_tasks_last_nudge_ts';
+
+    // Duha Prayer Dedicated Storage Keys
+    const DUHA_KEY = 'my_daily_tasks_duha_v2';
+    const DUHA_LEGACY_KEY = 'my_daily_tasks_duha_v1';
+    const DUHA_SOUND_NAME_KEY = 'my_daily_tasks_duha_sound_name';
+    const DUHA_SOUND_DATA_KEY = 'my_daily_tasks_duha_sound_data';
+    const DUHA_SOUND_OPTS_KEY = 'my_daily_tasks_duha_sound_opts_v1';
+
+    const DB_NAME = 'MyDailyTasksAudioDB';
+    const STORE_NAME = 'ringtones';
+
+    const ARABIC_DAYS = {
+      0: 'الأحد',
+      1: 'الاثنين',
+      2: 'الثلاثاء',
+      3: 'الأربعاء',
+      4: 'الخميس',
+      5: 'الجمعة',
+      6: 'السبت'
+    };
+
+    const WORK_DAYS = [0, 1, 2, 3, 4]; // الأحد إلى الخميس
+    const TOTAL_PERIODS = 7;
+
+    const TONE_NAMES_AR = {
+      chime: 'نغمة رخيمة متدرجة',
+      strings: 'وتريات ناعمة',
+      water: 'قطرات الماء',
+      marimba: 'ماريمبا حديثة',
+      crystal: 'إشعار كريستالي',
+      bell3: 'جرس تنبيه مزدوج',
+      classic: 'منبه رنين قوي'
+    };
+
+    let tasks = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+
+    const legacyDuha = JSON.parse(localStorage.getItem(DUHA_LEGACY_KEY) || 'null');
+    const savedDuha = JSON.parse(localStorage.getItem(DUHA_KEY) || 'null');
+
+    let duhaData = Object.assign({
+      firstPeriodStart: '07:30',
+      periodDuration: 40,
+      breakAfterPeriod: 3,
+      breakDuration: 20,
+      bufferMinutes: 5,
+      freePeriods: { '0': [], '1': [], '2': [], '3': [], '4': [], '5': [], '6': [] },
+      days: { '0': '', '1': '', '2': '', '3': '', '4': '', '5': '', '6': '' },
+      overrideDate: '',
+      overrideTime: '',
+      doneDate: '',
+      notifiedDate: '',
+      snoozeUntilTs: 0,
+      backupEnabled: true,
+      backupTime: '11:15',
+      backupNotifiedDate: ''
+    }, legacyDuha || {}, savedDuha || {});
+
+    let taskSoundOpts = Object.assign({
+      tone: localStorage.getItem(SOUND_NAME_KEY) ? 'device' : 'marimba',
+      repeat: '3x',
+      startSec: 0,
+      clipDur: 10
+    }, JSON.parse(localStorage.getItem(TASK_SOUND_OPTS_KEY) || '{}'));
+
+    let duhaSoundOpts = Object.assign({
+      tone: localStorage.getItem(DUHA_SOUND_NAME_KEY) ? 'device' : 'strings',
+      repeat: '3x',
+      startSec: 0,
+      clipDur: 10
+    }, JSON.parse(localStorage.getItem(DUHA_SOUND_OPTS_KEY) || '{}'));
+
+    let currentFilter = 'all';
+    let selectedMode = 'flexible';
+    let selectedFlexHours = parseInt(localStorage.getItem(NUDGE_INTERVAL_KEY) || '2', 10);
+    let assigningTaskId = null;
+    let audioCtx = null;
+    let taskAudioBlobUrl = null;
+    let duhaAudioBlobUrl = null;
+    let activeAudioPlayer = null;
+    let activePlaybackToken = 0;
+    let activeClipTimer = null;
+    let activeRepeatTimer = null;
+    let deferredInstallPrompt = null;
+    let lastRenderedDateKey = '';
+    let editingSoundKind = 'task';
+    let pendingConfirmCallback = null;
+
+    let draftBellConfig = null;
+    let draftFreePeriods = null;
+
+    // DOM Elements
+    const todayDateEl = document.getElementById('todayDate');
+    const progressTextEl = document.getElementById('progressText');
+    const flexSummaryTextEl = document.getElementById('flexSummaryText');
+    const progressFillEl = document.getElementById('progressFill');
+    const taskListEl = document.getElementById('taskList');
+    const taskModal = document.getElementById('taskModal');
+    const modalHeading = document.getElementById('modalHeading');
+    const taskTitleInput = document.getElementById('taskTitleInput');
+    const taskPriorityInput = document.getElementById('taskPriorityInput');
+    const typeSelectorGroup = document.getElementById('typeSelectorGroup');
+    const flexibleIntervalGroup = document.getElementById('flexibleIntervalGroup');
+    const timeInputGroup = document.getElementById('timeInputGroup');
+    const priorityGroup = document.getElementById('priorityGroup');
+    const optFlexible = document.getElementById('optFlexible');
+    const optTimed = document.getElementById('optTimed');
+    const nudgeIntervalSelect = document.getElementById('nudgeIntervalSelect');
+    const alertBanner = document.getElementById('alertBanner');
+    const alertBannerTitle = document.getElementById('alertBannerTitle');
+    const alertBannerDesc = document.getElementById('alertBannerDesc');
+    const alertBannerActions = document.getElementById('alertBannerActions');
+    const toastEl = document.getElementById('toast');
+    const deviceAudioInput = document.getElementById('deviceAudioInput');
+    const selectedSoundNameEl = document.getElementById('selectedSoundName');
+    const btnResetSound = document.getElementById('btnResetSound');
+    const installBanner = document.getElementById('installBanner');
+    const btnInstallApp = document.getElementById('btnInstallApp');
+    const appModeBadge = document.getElementById('appModeBadge');
+    const btnOpenModal = document.getElementById('btnOpenModal');
+
+    // Navigation Views & Tabs
+    const navBtnTasks = document.getElementById('navBtnTasks');
+    const navBtnDuha = document.getElementById('navBtnDuha');
+    const tasksTabBadge = document.getElementById('tasksTabBadge');
+    const duhaTabBadge = document.getElementById('duhaTabBadge');
+    const viewTasks = document.getElementById('viewTasks');
+    const viewDuha = document.getElementById('viewDuha');
+    const taskSettingsModal = document.getElementById('taskSettingsModal');
+
+    // Duha DOM Elements
+    const duhaCard = document.getElementById('duhaCard');
+    const duhaDayChip = document.getElementById('duhaDayChip');
+    const duhaTimeDisplay = document.getElementById('duhaTimeDisplay');
+    const duhaSubInfo = document.getElementById('duhaSubInfo');
+    const btnToggleDuhaDone = document.getElementById('btnToggleDuhaDone');
+    const duhaWeekSummaryList = document.getElementById('duhaWeekSummaryList');
+    const duhaScheduleModal = document.getElementById('duhaScheduleModal');
+    const duhaDaysGridContainer = document.getElementById('duhaDaysGridContainer');
+    const duhaAudioInput = document.getElementById('duhaAudioInput');
+    const duhaSoundNameBadge = document.getElementById('duhaSoundNameBadge');
+    const btnResetDuhaSound = document.getElementById('btnResetDuhaSound');
+    const duhaBackupCheck = document.getElementById('duhaBackupCheck');
+    const duhaTodayModal = document.getElementById('duhaTodayModal');
+    const periodDurInput = document.getElementById('periodDurInput');
+    const breakAfterSelect = document.getElementById('breakAfterSelect');
+    const breakDurInput = document.getElementById('breakDurInput');
+    const bellPreviewStrip = document.getElementById('bellPreviewStrip');
+
+    // Sound Options & Confirm Modals
+    const soundOptionsModal = document.getElementById('soundOptionsModal');
+    const soundOptsTitle = document.getElementById('soundOptsTitle');
+    const btnSaveAndTestSoundOpts = document.getElementById('btnSaveAndTestSoundOpts');
+    const confirmModal = document.getElementById('confirmModal');
+    const confirmIcon = document.getElementById('confirmIcon');
+    const confirmTitle = document.getElementById('confirmTitle');
+    const confirmMessage = document.getElementById('confirmMessage');
+    const btnConfirmYes = document.getElementById('btnConfirmYes');
+    const btnConfirmNo = document.getElementById('btnConfirmNo');
+
+    // ================= TOP SCREEN SWITCHER (TASKS vs DUHA) =================
+    function switchScreen(screenName) {
+      if (screenName === 'duha') {
+        viewTasks.style.display = 'none';
+        viewDuha.style.display = 'block';
+        navBtnTasks.classList.remove('active');
+        navBtnDuha.classList.add('active');
+        btnOpenModal.style.display = 'none';
+        renderDuhaCard();
+      } else {
+        viewDuha.style.display = 'none';
+        viewTasks.style.display = 'block';
+        navBtnDuha.classList.remove('active');
+        navBtnTasks.classList.add('active');
+        btnOpenModal.style.display = 'flex';
+        renderTasks();
+      }
+    }
+
+    navBtnTasks.addEventListener('click', () => switchScreen('tasks'));
+    navBtnDuha.addEventListener('click', () => switchScreen('duha'));
+
+    document.getElementById('btnOpenTaskSettings').addEventListener('click', () => {
+      taskSettingsModal.classList.add('open');
+    });
+    document.getElementById('btnCloseTaskSettings').addEventListener('click', () => {
+      taskSettingsModal.classList.remove('open');
+    });
+    taskSettingsModal.addEventListener('click', (e) => {
+      if (e.target === taskSettingsModal) taskSettingsModal.classList.remove('open');
+    });
+
+    // ================= CONFIRMATION DIALOG SYSTEM =================
+    function askConfirmation({ icon = '⚠️', title, message, confirmText = 'نعم، متأكد', onConfirm }) {
+      confirmIcon.textContent = icon;
+      confirmTitle.textContent = title;
+      confirmMessage.textContent = message;
+      btnConfirmYes.textContent = confirmText;
+      pendingConfirmCallback = onConfirm;
+      confirmModal.classList.add('open');
+    }
+
+    btnConfirmYes.addEventListener('click', () => {
+      confirmModal.classList.remove('open');
+      if (typeof pendingConfirmCallback === 'function') {
+        const cb = pendingConfirmCallback;
+        pendingConfirmCallback = null;
+        cb();
+      }
+    });
+
+    btnConfirmNo.addEventListener('click', () => {
+      confirmModal.classList.remove('open');
+      pendingConfirmCallback = null;
+    });
+
+    confirmModal.addEventListener('click', (e) => {
+      if (e.target === confirmModal) {
+        confirmModal.classList.remove('open');
+        pendingConfirmCallback = null;
+      }
+    });
+
+    // ================= DIRECT NUMERIC TIME WIDGET =================
+    function createNumericTimeWidget(mountEl, options = {}) {
+      const compact = Boolean(options.compact);
+      const showPresets = Boolean(options.showPresets);
+      const onChange = options.onChange || null;
+
+      mountEl.innerHTML = `
+        <div class="numeric-time-box ${compact ? 'compact' : ''}">
+          <div class="time-part-wrap">
+            ${compact ? '' : '<span class="time-part-label">الساعة (1-12)</span>'}
+            <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="2" class="num-time-input js-hour" placeholder="--" aria-label="الساعة" />
+          </div>
+          <span class="time-colon">:</span>
+          <div class="time-part-wrap">
+            ${compact ? '' : '<span class="time-part-label">الدقيقة (00-59)</span>'}
+            <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="2" class="num-time-input js-min" placeholder="--" aria-label="الدقيقة" />
+          </div>
+          <button type="button" class="ampm-toggle-btn js-ampm" data-period="AM">ص</button>
+        </div>
+        ${showPresets ? `
+          <div class="quick-presets" style="margin-top:6px;">
+            <button type="button" class="preset-btn js-min-chip" data-m="00">:00</button>
+            <button type="button" class="preset-btn js-min-chip" data-m="15">:15</button>
+            <button type="button" class="preset-btn js-min-chip" data-m="30">:30</button>
+            <button type="button" class="preset-btn js-min-chip" data-m="45">:45</button>
+          </div>
+        ` : ''}
+      `;
+
+      const hourInp = mountEl.querySelector('.js-hour');
+      const minInp = mountEl.querySelector('.js-min');
+      const ampmBtn = mountEl.querySelector('.js-ampm');
+
+      function notifyChange() {
+        if (typeof onChange === 'function') onChange();
+      }
+
+      function updateAmpmUi(period) {
+        ampmBtn.dataset.period = period;
+        if (period === 'PM') {
+          ampmBtn.textContent = compact ? 'م' : 'مساءً (م)';
+          ampmBtn.classList.add('pm');
+        } else {
+          ampmBtn.textContent = compact ? 'ص' : 'صباحاً (ص)';
+          ampmBtn.classList.remove('pm');
+        }
+      }
+      updateAmpmUi('AM');
+
+      ampmBtn.addEventListener('click', () => {
+        const next = ampmBtn.dataset.period === 'AM' ? 'PM' : 'AM';
+        updateAmpmUi(next);
+        notifyChange();
+      });
+
+      hourInp.addEventListener('focus', () => hourInp.select());
+      minInp.addEventListener('focus', () => minInp.select());
+
+      hourInp.addEventListener('input', () => {
+        let digits = hourInp.value.replace(/[^0-9]/g, '');
+        if (digits.length > 2) digits = digits.slice(0, 2);
+        if (digits.length === 2) {
+          let num = parseInt(digits, 10);
+          if (num > 12) {
+            const first = digits[0];
+            const second = digits[1];
+            hourInp.value = first;
+            minInp.value = second;
+            minInp.focus();
+            notifyChange();
+            return;
+          }
+          if (num === 0) digits = '12';
+          hourInp.value = digits;
+          minInp.focus();
+          minInp.select();
+        } else {
+          hourInp.value = digits;
+        }
+        notifyChange();
+      });
+
+      hourInp.addEventListener('blur', () => {
+        let digits = hourInp.value.replace(/[^0-9]/g, '');
+        if (!digits) return;
+        let num = parseInt(digits, 10);
+        if (num === 0) num = 12;
+        if (num > 12) num = 12;
+        hourInp.value = String(num).padStart(2, '0');
+        if (!minInp.value) minInp.value = '00';
+        notifyChange();
+      });
+
+      minInp.addEventListener('input', () => {
+        let digits = minInp.value.replace(/[^0-9]/g, '');
+        if (digits.length > 2) digits = digits.slice(0, 2);
+        if (digits.length === 2) {
+          let num = parseInt(digits, 10);
+          if (num > 59) digits = '59';
+        }
+        minInp.value = digits;
+        notifyChange();
+      });
+
+      minInp.addEventListener('blur', () => {
+        let digits = minInp.value.replace(/[^0-9]/g, '');
+        if (!digits) {
+          if (hourInp.value) minInp.value = '00';
+          notifyChange();
+          return;
+        }
+        let num = parseInt(digits, 10);
+        if (num > 59) num = 59;
+        minInp.value = String(num).padStart(2, '0');
+        notifyChange();
+      });
+
+      mountEl.querySelectorAll('.js-min-chip').forEach(btn => {
+        btn.addEventListener('click', () => {
+          if (!hourInp.value) hourInp.value = '09';
+          minInp.value = btn.dataset.m;
+          notifyChange();
+        });
+      });
+
+      return {
+        setValue(hhmm24) {
+          if (!hhmm24 || !hhmm24.includes(':')) {
+            hourInp.value = '';
+            minInp.value = '';
+            updateAmpmUi('AM');
+            return;
+          }
+          const [hStr, mStr] = hhmm24.split(':');
+          let h24 = parseInt(hStr, 10);
+          const period = h24 >= 12 ? 'PM' : 'AM';
+          let h12 = h24 % 12;
+          if (h12 === 0) h12 = 12;
+          hourInp.value = String(h12).padStart(2, '0');
+          minInp.value = String(parseInt(mStr, 10) || 0).padStart(2, '0');
+          updateAmpmUi(period);
+        },
+        getValue() {
+          const hRaw = hourInp.value.replace(/[^0-9]/g, '');
+          const mRaw = minInp.value.replace(/[^0-9]/g, '');
+          if (!hRaw) return '';
+          let h12 = parseInt(hRaw, 10);
+          if (isNaN(h12) || h12 < 1 || h12 > 12) return '';
+          let m = mRaw ? parseInt(mRaw, 10) : 0;
+          if (isNaN(m) || m < 0 || m > 59) m = 0;
+
+          const period = ampmBtn.dataset.period;
+          let h24 = h12;
+          if (period === 'AM') {
+            if (h12 === 12) h24 = 0;
+          } else {
+            if (h12 !== 12) h24 = h12 + 12;
+          }
+          return `${String(h24).padStart(2, '0')}:${String(m).padStart(2, '0')}`;
+        },
+        focusHour() {
+          hourInp.focus();
+          hourInp.select();
+        }
+      };
+    }
+
+    const taskTimeWidget = createNumericTimeWidget(document.getElementById('taskNumericTimeMount'), { showPresets: true });
+    const duhaTodayTimeWidget = createNumericTimeWidget(document.getElementById('duhaTodayTimeMount'), { showPresets: true });
+    const duhaBackupTimeWidget = createNumericTimeWidget(document.getElementById('duhaBackupTimeMount'), { compact: true });
+    const firstPeriodTimeWidget = createNumericTimeWidget(document.getElementById('firstPeriodTimeMount'), {
+      compact: true,
+      onChange: () => {
+        if (!draftBellConfig) return;
+        const val = firstPeriodTimeWidget.getValue();
+        if (val) {
+          draftBellConfig.firstPeriodStart = val;
+          renderBellPreviewAndGrid();
+        }
+      }
+    });
+
+    // ================= SCHOOL BELL & QUICK PERIOD GRID CALCULATOR =================
+    function minsToHHMM(totalMins) {
+      const wrapped = ((totalMins % 1440) + 1440) % 1440;
+      const h = Math.floor(wrapped / 60);
+      const m = wrapped % 60;
+      return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}`;
+    }
+
+    function hhmmToMins(hhmm) {
+      if (!hhmm || !hhmm.includes(':')) return 450;
+      const [h, m] = hhmm.split(':').map(n => parseInt(n, 10) || 0);
+      return h * 60 + m;
+    }
+
+    function computeSchoolPeriods(cfg) {
+      const startMins = hhmmToMins(cfg.firstPeriodStart || '07:30');
+      const pDur = Math.max(20, Math.min(90, parseInt(cfg.periodDuration, 10) || 40));
+      const breakAfter = parseInt(cfg.breakAfterPeriod, 10) || 0;
+      const bDur = Math.max(0, Math.min(60, parseInt(cfg.breakDuration, 10) || 20));
+      const buf = Math.max(0, Math.min(20, parseInt(cfg.bufferMinutes, 10) || 0));
+
+      let cursor = startMins;
+      const periods = [];
+      for (let p = 1; p <= TOTAL_PERIODS; p++) {
+        const pStart = cursor;
+        const pEnd = cursor + pDur;
+        const reminderMins = pStart + buf;
+        periods.push({
+          periodNum: p,
+          startMins: pStart,
+          endMins: pEnd,
+          startHHMM: minsToHHMM(pStart),
+          endHHMM: minsToHHMM(pEnd),
+          reminderMins: reminderMins,
+          reminderHHMM: minsToHHMM(reminderMins),
+          isDuhaWindow: (reminderMins >= 7 * 60 + 45 && reminderMins <= 11 * 60 + 30)
+        });
+        cursor = pEnd;
+        if (breakAfter === p && bDur > 0) {
+          cursor += bDur;
+        }
+      }
+      return periods;
+    }
+
+    function resolveBestPeriodForDay(selectedList, periods) {
+      if (!Array.isArray(selectedList) || selectedList.length === 0) return null;
+      const sortedNums = [...selectedList].sort((a, b) => a - b);
+      const matched = sortedNums
+        .map(num => periods.find(p => p.periodNum === num))
+        .filter(Boolean);
+      if (matched.length === 0) return null;
+      const validDuha = matched.find(p => p.isDuhaWindow);
+      return validDuha || matched[0];
+    }
+
+    function getLocalTodayKey(dateObj = new Date()) {
+      const y = dateObj.getFullYear();
+      const m = String(dateObj.getMonth() + 1).padStart(2, '0');
+      const d = String(dateObj.getDate()).padStart(2, '0');
+      return `${y}-${m}-${d}`;
+    }
+
+    if (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone) {
+      appModeBadge.textContent = 'مثبّت على الجهاز ✓';
+    } else if (location.protocol === 'https:') {
+      installBanner.classList.add('show');
+    }
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredInstallPrompt = e;
+      installBanner.classList.add('show');
+    });
+
+    btnInstallApp.addEventListener('click', async () => {
+      if (deferredInstallPrompt) {
+        deferredInstallPrompt.prompt();
+        const choice = await deferredInstallPrompt.userChoice;
+        if (choice.outcome === 'accepted') {
+          installBanner.classList.remove('show');
+          showToast('جاري تثبيت التطبيق على شاشة هاتفك...');
+        }
+        deferredInstallPrompt = null;
+      } else {
+        showToast('من قائمة المتصفح (⋮) بالأعلى اختر "تثبيت التطبيق" أو "الإضافة إلى الشاشة الرئيسية"');
+      }
+    });
+
+    function updateHeaderDate() {
+      try {
+        todayDateEl.textContent = new Intl.DateTimeFormat('ar-EG', {
+          weekday: 'long',
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric'
+        }).format(new Date());
+      } catch (e) {
+        todayDateEl.textContent = new Date().toLocaleDateString();
+      }
+    }
+    updateHeaderDate();
+
+    function showToast(msg) {
+      toastEl.textContent = msg;
+      toastEl.style.display = 'block';
+      clearTimeout(window._toastTimer);
+      window._toastTimer = setTimeout(() => {
+        toastEl.style.display = 'none';
+      }, 3000);
+    }
+
+    // Default Nudge interval setup in settings
+    nudgeIntervalSelect.value = localStorage.getItem(NUDGE_INTERVAL_KEY) || '2';
+    nudgeIntervalSelect.addEventListener('change', () => {
+      localStorage.setItem(NUDGE_INTERVAL_KEY, nudgeIntervalSelect.value);
+      selectedFlexHours = parseInt(nudgeIntervalSelect.value, 10);
+      if (nudgeIntervalSelect.value === '0') {
+        showToast('تم ضبط الافتراضي للمهام المرنة: بدون تنبيه');
+      } else {
+        showToast(`الافتراضي للمهام المرنة الجديدة: كل ${formatHoursArabic(selectedFlexHours)}`);
+      }
+    });
+
+    function formatHoursArabic(h) {
+      if (h === 1) return 'ساعة';
+      if (h === 2) return 'ساعتين';
+      return `${h} ساعات`;
+    }
+
+    // ================= SOUND & REPEAT ENGINE =================
+    function saveSoundOptions() {
+      localStorage.setItem(TASK_SOUND_OPTS_KEY, JSON.stringify(taskSoundOpts));
+      localStorage.setItem(DUHA_SOUND_OPTS_KEY, JSON.stringify(duhaSoundOpts));
+      updateSoundLabels();
+      renderDuhaCard();
+    }
+
+    function openAudioDB() {
+      return new Promise((resolve, reject) => {
+        if (!window.indexedDB) return reject('No IndexedDB');
+        const req = indexedDB.open(DB_NAME, 1);
+        req.onupgradeneeded = (e) => {
+          const db = e.target.result;
+          if (!db.objectStoreNames.contains(STORE_NAME)) {
+            db.createObjectStore(STORE_NAME);
+          }
+        };
+        req.onsuccess = () => resolve(req.result);
+        req.onerror = () => reject(req.error);
+      });
+    }
+
+    async function saveAudioFile(kind, file) {
+      const isDuha = (kind === 'duha');
+      const nameKey = isDuha ? DUHA_SOUND_NAME_KEY : SOUND_NAME_KEY;
+      const dataKey = isDuha ? DUHA_SOUND_DATA_KEY : SOUND_DATA_KEY;
+      const dbKey = isDuha ? 'duha_tone' : 'selected_tone';
+      const defaultName = isDuha ? 'نغمة صلاة الضحى' : 'نغمة المهام';
+
+      const name = file.name || defaultName;
+      localStorage.setItem(nameKey, name);
+
+      const newUrl = URL.createObjectURL(file);
+      if (isDuha) {
+        if (duhaAudioBlobUrl && duhaAudioBlobUrl.startsWith('blob:')) URL.revokeObjectURL(duhaAudioBlobUrl);
+        duhaAudioBlobUrl = newUrl;
+        duhaSoundOpts.tone = 'device';
+      } else {
+        if (taskAudioBlobUrl && taskAudioBlobUrl.startsWith('blob:')) URL.revokeObjectURL(taskAudioBlobUrl);
+        taskAudioBlobUrl = newUrl;
+        taskSoundOpts.tone = 'device';
+      }
+
+      try {
+        const db = await openAudioDB();
+        const tx = db.transaction(STORE_NAME, 'readwrite');
+        tx.objectStore(STORE_NAME).put(file, dbKey);
+      } catch (e) {
+        if (file.size < 2.5 * 1024 * 1024) {
+          const reader = new FileReader();
+          reader.onload = () => {
+            try { localStorage.setItem(dataKey, reader.result); } catch (_) {}
+          };
+          reader.readAsDataURL(file);
+        }
+      }
+      saveSoundOptions();
+    }
+
+    async function loadSavedAudioFiles() {
+      for (const kind of ['task', 'duha']) {
+        const isDuha = (kind === 'duha');
+        const nameKey = isDuha ? DUHA_SOUND_NAME_KEY : SOUND_NAME_KEY;
+        const dataKey = isDuha ? DUHA_SOUND_DATA_KEY : SOUND_DATA_KEY;
+        const dbKey = isDuha ? 'duha_tone' : 'selected_tone';
+
+        const savedName = localStorage.getItem(nameKey);
+        if (!savedName) continue;
+
+        try {
+          const db = await openAudioDB();
+          const tx = db.transaction(STORE_NAME, 'readonly');
+          const req = tx.objectStore(STORE_NAME).get(dbKey);
+          req.onsuccess = () => {
+            const url = req.result ? URL.createObjectURL(req.result) : localStorage.getItem(dataKey);
+            if (url) {
+              if (isDuha) duhaAudioBlobUrl = url;
+              else taskAudioBlobUrl = url;
+              updateSoundLabels();
+              renderDuhaCard();
+            }
+          };
+        } catch (e) {
+          const fallbackData = localStorage.getItem(dataKey);
+          if (fallbackData) {
+            if (isDuha) duhaAudioBlobUrl = fallbackData;
+            else taskAudioBlobUrl = fallbackData;
+          }
+        }
+      }
+      updateSoundLabels();
+    }
+
+    async function clearAudioFile(kind) {
+      const isDuha = (kind === 'duha');
+      const nameKey = isDuha ? DUHA_SOUND_NAME_KEY : SOUND_NAME_KEY;
+      const dataKey = isDuha ? DUHA_SOUND_DATA_KEY : SOUND_DATA_KEY;
+      const dbKey = isDuha ? 'duha_tone' : 'selected_tone';
+
+      localStorage.removeItem(nameKey);
+      localStorage.removeItem(dataKey);
+      if (isDuha) {
+        if (duhaAudioBlobUrl && duhaAudioBlobUrl.startsWith('blob:')) URL.revokeObjectURL(duhaAudioBlobUrl);
+        duhaAudioBlobUrl = null;
+        duhaSoundOpts.tone = 'strings';
+        duhaSoundOpts.startSec = 0;
+      } else {
+        if (taskAudioBlobUrl && taskAudioBlobUrl.startsWith('blob:')) URL.revokeObjectURL(taskAudioBlobUrl);
+        taskAudioBlobUrl = null;
+        taskSoundOpts.tone = 'marimba';
+        taskSoundOpts.startSec = 0;
+      }
+      try {
+        const db = await openAudioDB();
+        const tx = db.transaction(STORE_NAME, 'readwrite');
+        tx.objectStore(STORE_NAME).delete(dbKey);
+      } catch (e) {}
+      saveSoundOptions();
+    }
+
+    function describeSoundSummary(kind) {
+      const opts = kind === 'duha' ? duhaSoundOpts : taskSoundOpts;
+      const savedName = localStorage.getItem(kind === 'duha' ? DUHA_SOUND_NAME_KEY : SOUND_NAME_KEY);
+
+      let toneLabel = '';
+      if (opts.tone === 'device' && savedName) {
+        toneLabel = savedName;
+      } else {
+        toneLabel = TONE_NAMES_AR[opts.tone] || TONE_NAMES_AR.marimba;
+      }
+
+      const repLabel = opts.repeat === 'loop' ? 'مستمر' : (opts.repeat === '3x' ? '3 مرات' : 'مرة واحدة');
+      const trimLabel = (opts.tone === 'device' && opts.startSec > 0) ? ` • من ث${opts.startSec}` : '';
+      return `${toneLabel} (${repLabel}${trimLabel})`;
+    }
+
+    function updateSoundLabels() {
+      const hasTaskCustom = Boolean(localStorage.getItem(SOUND_NAME_KEY)) || taskSoundOpts.tone !== 'marimba' || taskSoundOpts.repeat !== '3x';
+      selectedSoundNameEl.textContent = 'الصوت: ' + describeSoundSummary('task');
+      btnResetSound.style.display = hasTaskCustom ? 'inline-block' : 'none';
+
+      const hasDuhaCustom = Boolean(localStorage.getItem(DUHA_SOUND_NAME_KEY)) || duhaSoundOpts.tone !== 'strings' || duhaSoundOpts.repeat !== '3x';
+      duhaSoundNameBadge.textContent = 'الصوت: ' + describeSoundSummary('duha');
+      btnResetDuhaSound.style.display = hasDuhaCustom ? 'inline-block' : 'none';
+    }
+
+    // Task Audio Listeners
+    document.getElementById('btnPickDeviceSound').addEventListener('click', () => deviceAudioInput.click());
+    deviceAudioInput.addEventListener('change', async (e) => {
+      const file = e.target.files && e.target.files[0];
+      if (!file) return;
+      await saveAudioFile('task', file);
+      playAlertSound('task');
+      showToast('تم حفظ ملف الجهاز! يمكنك ضبط نقطة البداية والتكرار من "اختيار النغمة"');
+    });
+
+    btnResetSound.addEventListener('click', () => {
+      askConfirmation({
+        icon: '🔄',
+        title: 'استعادة الصوت الافتراضي للمهام',
+        message: 'هل تريد إلغاء الإعدادات المخصصة واستعادة نغمة المهام الافتراضية؟',
+        confirmText: 'نعم، استعادة الافتراضي',
+        onConfirm: async () => {
+          stopAlertSound();
+          await clearAudioFile('task');
+          showToast('تمت استعادة صوت المهام الافتراضي');
+        }
+      });
+    });
+
+    // Duha Audio Listeners
+    document.getElementById('btnPickDuhaSound').addEventListener('click', () => duhaAudioInput.click());
+    duhaAudioInput.addEventListener('change', async (e) => {
+      const file = e.target.files && e.target.files[0];
+      if (!file) return;
+      await saveAudioFile('duha', file);
+      playAlertSound('duha');
+      showToast('تم حفظ نغمة صلاة الضحى! يمكنك ضبط التكرار من "اختيار نغمة الضحى"');
+    });
+
+    btnResetDuhaSound.addEventListener('click', () => {
+      askConfirmation({
+        icon: '🔄',
+        title: 'استعادة الصوت الافتراضي لصلاة الضحى',
+        message: 'هل تريد إلغاء الإعدادات المخصصة واستعادة نغمة صلاة الضحى الافتراضية؟',
+        confirmText: 'نعم، استعادة الافتراضي',
+        onConfirm: async () => {
+          stopAlertSound();
+          await clearAudioFile('duha');
+          showToast('تمت استعادة نغمة صلاة الضحى الافتراضية');
+        }
+      });
+    });
+
+    // ================= SOUND OPTIONS MODAL LOGIC =================
+    function getAllTonePills() {
+      return document.querySelectorAll('#toneSourcePillsCalm .opt-pill, #toneSourcePillsTasks .opt-pill');
+    }
+
+    function openSoundOptionsModal(kind) {
+      editingSoundKind = kind;
+      const opts = kind === 'duha' ? duhaSoundOpts : taskSoundOpts;
+      const hasDeviceFile = Boolean(kind === 'duha' ? duhaAudioBlobUrl : taskAudioBlobUrl);
+
+      soundOptsTitle.textContent = kind === 'duha'
+        ? '🎵 اختيار نغمة صلاة الضحى وخياراتها'
+        : '🎵 اختيار نغمة المهام وخياراتها';
+
+      btnSaveAndTestSoundOpts.classList.toggle('emerald', kind === 'duha');
+
+      const devicePill = document.querySelector('#toneSourcePillsTasks .opt-pill[data-tone="device"]');
+      devicePill.style.display = hasDeviceFile ? 'inline-block' : 'none';
+
+      getAllTonePills().forEach(p => {
+        p.classList.toggle('duha-pill', kind === 'duha');
+        p.classList.toggle('active', p.dataset.tone === opts.tone);
+      });
+      document.querySelectorAll('#repeatModePills .opt-pill').forEach(p => {
+        p.classList.toggle('duha-pill', kind === 'duha');
+        p.classList.toggle('active', p.dataset.repeat === opts.repeat);
+      });
+      document.querySelectorAll('#startSecPills .opt-pill').forEach(p => {
+        p.classList.toggle('duha-pill', kind === 'duha');
+        p.classList.toggle('active', parseInt(p.dataset.start, 10) === (opts.startSec || 0));
+      });
+      document.querySelectorAll('#clipDurPills .opt-pill').forEach(p => {
+        p.classList.toggle('duha-pill', kind === 'duha');
+        p.classList.toggle('active', parseInt(p.dataset.dur, 10) === (opts.clipDur || 0));
+      });
+
+      document.getElementById('deviceTrimBox').style.display = (opts.tone === 'device' && hasDeviceFile) ? 'block' : 'none';
+      soundOptionsModal.classList.add('open');
+    }
+
+    document.getElementById('btnOpenTaskSoundOpts').addEventListener('click', () => openSoundOptionsModal('task'));
+    document.getElementById('btnOpenDuhaSoundOpts').addEventListener('click', () => openSoundOptionsModal('duha'));
+
+    getAllTonePills().forEach(pill => {
+      pill.addEventListener('click', () => {
+        const opts = editingSoundKind === 'duha' ? duhaSoundOpts : taskSoundOpts;
+        opts.tone = pill.dataset.tone;
+        getAllTonePills().forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+        document.getElementById('deviceTrimBox').style.display = (opts.tone === 'device') ? 'block' : 'none';
+
+        // Instant single preview on tap so user can audition every ringtone
+        stopAlertSound();
+        if (opts.tone === 'device') {
+          const blobUrl = editingSoundKind === 'duha' ? duhaAudioBlobUrl : taskAudioBlobUrl;
+          if (blobUrl) {
+            const p = new Audio(blobUrl);
+            activeAudioPlayer = p;
+            if ((opts.startSec || 0) > 0) p.currentTime = opts.startSec;
+            p.play().catch(() => {});
+            activeClipTimer = setTimeout(() => { try { p.pause(); } catch (_) {} }, 4000);
+          }
+        } else {
+          playSynthPattern(opts.tone);
+        }
+      });
+    });
+
+    document.querySelectorAll('#repeatModePills .opt-pill').forEach(pill => {
+      pill.addEventListener('click', () => {
+        const opts = editingSoundKind === 'duha' ? duhaSoundOpts : taskSoundOpts;
+        opts.repeat = pill.dataset.repeat;
+        document.querySelectorAll('#repeatModePills .opt-pill').forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+      });
+    });
+
+    document.querySelectorAll('#startSecPills .opt-pill').forEach(pill => {
+      pill.addEventListener('click', () => {
+        const opts = editingSoundKind === 'duha' ? duhaSoundOpts : taskSoundOpts;
+        opts.startSec = parseInt(pill.dataset.start, 10);
+        document.querySelectorAll('#startSecPills .opt-pill').forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+      });
+    });
+
+    document.querySelectorAll('#clipDurPills .opt-pill').forEach(pill => {
+      pill.addEventListener('click', () => {
+        const opts = editingSoundKind === 'duha' ? duhaSoundOpts : taskSoundOpts;
+        opts.clipDur = parseInt(pill.dataset.dur, 10);
+        document.querySelectorAll('#clipDurPills .opt-pill').forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+      });
+    });
+
+    document.getElementById('btnSaveAndTestSoundOpts').addEventListener('click', async () => {
+      await requestPermissions();
+      saveSoundOptions();
+      soundOptionsModal.classList.remove('open');
+      sendSystemNotification(
+        editingSoundKind === 'duha' ? 'تجربة نغمة صلاة الضحى' : 'تجربة نغمة المهام',
+        'اضغط إيقاف الصوت عند الانتهاء من المعاينة',
+        editingSoundKind
+      );
+    });
+
+    document.getElementById('btnCloseSoundOpts').addEventListener('click', () => {
+      stopAlertSound();
+      saveSoundOptions();
+      soundOptionsModal.classList.remove('open');
+    });
+    soundOptionsModal.addEventListener('click', (e) => {
+      if (e.target === soundOptionsModal) {
+        stopAlertSound();
+        saveSoundOptions();
+        soundOptionsModal.classList.remove('open');
+      }
+    });
+
+    // ================= 7 BUILT-IN PROFESSIONAL RINGTONES SYNTHESIS =================
+    function unlockAudio() {
+      if (!audioCtx) {
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        if (AudioContext) audioCtx = new AudioContext();
+      }
+      if (audioCtx && audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+    }
+
+    function stopAlertSound() {
+      activePlaybackToken++;
+      clearTimeout(activeClipTimer);
+      clearTimeout(activeRepeatTimer);
+      if (activeAudioPlayer) {
+        try {
+          activeAudioPlayer.pause();
+          activeAudioPlayer.currentTime = 0;
+        } catch (e) {}
+        activeAudioPlayer = null;
+      }
+    }
+
+    function playSynthPattern(toneType) {
+      unlockAudio();
+      if (!audioCtx) return 1000;
+      const now = audioCtx.currentTime;
+
+      function note(freq, offset, dur, wave = 'sine', peak = 0.4, attack = 0.02) {
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = wave;
+        osc.frequency.setValueAtTime(freq, now + offset);
+        gain.gain.setValueAtTime(0.0008, now + offset);
+        gain.gain.exponentialRampToValueAtTime(peak, now + offset + attack);
+        gain.gain.exponentialRampToValueAtTime(0.0008, now + offset + dur);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start(now + offset);
+        osc.stop(now + offset + dur + 0.03);
+      }
+
+      if (toneType === 'strings') {
+        // 🎻 وتريات ناعمة: Warm layered harmonic chord progression (Cmaj7 -> G6)
+        const chord1 = [261.63, 329.63, 392.00, 493.88]; // C4, E4, G4, B4
+        const chord2 = [293.66, 392.00, 493.88, 587.33]; // D4, G4, B4, D5
+        chord1.forEach((f, idx) => {
+          note(f, 0.00, 0.95, 'triangle', 0.16, 0.22);
+          note(f * 1.003, 0.02, 0.95, 'sine', 0.14, 0.25);
+        });
+        chord2.forEach((f, idx) => {
+          note(f, 0.75, 1.15, 'triangle', 0.17, 0.24);
+          note(f * 0.997, 0.77, 1.15, 'sine', 0.15, 0.26);
+        });
+        return 1900;
+
+      } else if (toneType === 'water') {
+        // 💧 قطرات الماء: Resonant pitch-sweeping water droplets in pentatonic harmony
+        const drops = [
+          { f0: 520, f1: 1180, t: 0.00, d: 0.14 },
+          { f0: 660, f1: 1480, t: 0.22, d: 0.14 },
+          { f0: 590, f1: 1320, t: 0.44, d: 0.15 },
+          { f0: 780, f1: 1760, t: 0.68, d: 0.18 }
+        ];
+        drops.forEach(dr => {
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(dr.f0, now + dr.t);
+          osc.frequency.exponentialRampToValueAtTime(dr.f1, now + dr.t + dr.d * 0.75);
+          osc.frequency.exponentialRampToValueAtTime(dr.f1 * 0.92, now + dr.t + dr.d);
+
+          gain.gain.setValueAtTime(0.001, now + dr.t);
+          gain.gain.exponentialRampToValueAtTime(0.42, now + dr.t + 0.015);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + dr.t + dr.d + 0.06);
+
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+          osc.start(now + dr.t);
+          osc.stop(now + dr.t + dr.d + 0.08);
+        });
+        return 1000;
+
+      } else if (toneType === 'marimba') {
+        // 🎹 ماريمبا حديثة: Crisp percussive wooden-bar melody with 4th harmonic overtone
+        const melody = [
+          { f: 523.25, t: 0.00, d: 0.24 }, // C5
+          { f: 659.25, t: 0.16, d: 0.24 }, // E5
+          { f: 783.99, t: 0.32, d: 0.24 }, // G5
+          { f: 1046.50, t: 0.48, d: 0.42 }, // C6
+          { f: 783.99, t: 0.72, d: 0.22 }, // G5
+          { f: 1046.50, t: 0.90, d: 0.48 }  // C6
+        ];
+        melody.forEach(m => {
+          note(m.f, m.t, m.d, 'sine', 0.42, 0.008);
+          note(m.f * 4, m.t, m.d * 0.25, 'sine', 0.14, 0.005); // Wood bar overtone
+        });
+        return 1420;
+
+      } else if (toneType === 'crystal') {
+        // ✨ إشعار كريستالي: Sparkling high-clarity celesta shimmer
+        const notes = [
+          { f: 987.77, t: 0.00, d: 0.45 },  // B5
+          { f: 1318.51, t: 0.14, d: 0.50 }, // E6
+          { f: 1567.98, t: 0.28, d: 0.65 }, // G6
+          { f: 1975.53, t: 0.42, d: 0.85 }  // B6
+        ];
+        notes.forEach(n => {
+          note(n.f, n.t, n.d, 'sine', 0.32, 0.01);
+          note(n.f * 2, n.t, n.d * 0.5, 'sine', 0.09, 0.01);
+        });
+        return 1300;
+
+      } else if (toneType === 'classic') {
+        // ⏰ منبه رنين قوي: Loud crisp alarm multi-pulse
+        note(880, 0.00, 0.13, 'triangle', 0.50, 0.01);
+        note(1174.66, 0.14, 0.13, 'triangle', 0.50, 0.01);
+        note(880, 0.30, 0.13, 'triangle', 0.50, 0.01);
+        note(1174.66, 0.44, 0.13, 'triangle', 0.50, 0.01);
+        note(1318.51, 0.60, 0.32, 'triangle', 0.52, 0.01);
+        return 980;
+
+      } else if (toneType === 'chime') {
+        // 🎶 نغمة رخيمة متدرجة: Serene ascending 4-note harp chime
+        note(523.25, 0.00, 0.32, 'sine', 0.38, 0.025);
+        note(659.25, 0.22, 0.34, 'sine', 0.40, 0.025);
+        note(783.99, 0.44, 0.38, 'sine', 0.42, 0.025);
+        note(1046.50, 0.66, 0.65, 'sine', 0.44, 0.03);
+        note(523.25, 0.66, 0.65, 'triangle', 0.16, 0.04);
+        return 1350;
+
+      } else {
+        // 🔔 جرس تنبيه مزدوج (bell3)
+        note(783.99, 0.00, 0.26, 'triangle', 0.44, 0.015);
+        note(1567.98, 0.00, 0.14, 'sine', 0.14, 0.01);
+        note(1046.50, 0.22, 0.52, 'triangle', 0.48, 0.015);
+        note(2093.00, 0.22, 0.24, 'sine', 0.15, 0.01);
+        return 850;
+      }
+    }
+
+    function playAlertSound(kind = 'task') {
+      stopAlertSound();
+      const token = activePlaybackToken;
+      const opts = (kind === 'duha') ? duhaSoundOpts : taskSoundOpts;
+      const blobUrl = (kind === 'duha') ? duhaAudioBlobUrl : taskAudioBlobUrl;
+      const maxPlays = opts.repeat === 'loop' ? 999 : (opts.repeat === '3x' ? 3 : 1);
+      let playCount = 0;
+
+      function triggerNextCycle() {
+        if (token !== activePlaybackToken) return;
+        if (playCount >= maxPlays) return;
+        playCount++;
+
+        if (opts.tone === 'device' && blobUrl) {
+          try {
+            const player = new Audio(blobUrl);
+            activeAudioPlayer = player;
+            const startOffset = Number(opts.startSec) || 0;
+            const clipSeconds = Number(opts.clipDur) || 0;
+
+            const scheduleNextAfterEnd = () => {
+              if (token !== activePlaybackToken) return;
+              if (playCount < maxPlays) {
+                activeRepeatTimer = setTimeout(triggerNextCycle, 700);
+              }
+            };
+
+            player.onended = scheduleNextAfterEnd;
+
+            const startPlayback = () => {
+              if (token !== activePlaybackToken) return;
+              if (startOffset > 0 && player.duration && startOffset < player.duration - 1) {
+                player.currentTime = startOffset;
+              }
+              player.play().catch(() => {
+                const durMs = playSynthPattern('marimba');
+                if (playCount < maxPlays) {
+                  activeRepeatTimer = setTimeout(triggerNextCycle, durMs + 500);
+                }
+              });
+              if (clipSeconds > 0) {
+                activeClipTimer = setTimeout(() => {
+                  if (token !== activePlaybackToken) return;
+                  try { player.pause(); } catch (_) {}
+                  scheduleNextAfterEnd();
+                }, clipSeconds * 1000);
+              }
+            };
+
+            if (player.readyState >= 1) {
+              startPlayback();
+            } else {
+              player.addEventListener('loadedmetadata', startPlayback, { once: true });
+            }
+            return;
+          } catch (e) {}
+        }
+
+        const toneName = (opts.tone === 'device') ? (kind === 'duha' ? 'strings' : 'marimba') : opts.tone;
+        const durMs = playSynthPattern(toneName);
+        if (playCount < maxPlays) {
+          activeRepeatTimer = setTimeout(triggerNextCycle, durMs + 550);
+        }
+      }
+
+      triggerNextCycle();
+    }
+
+    async function requestPermissions() {
+      unlockAudio();
+      if ('Notification' in window && Notification.permission === 'default') {
+        try {
+          await Notification.requestPermission();
+        } catch (e) {}
+      }
+    }
+
+    function dismissAlertBanner() {
+      stopAlertSound();
+      alertBanner.classList.remove('active', 'duha-alert');
+    }
+
+    function sendSystemNotification(title, body, kind = 'task') {
+      playAlertSound(kind);
+      if (navigator.vibrate) {
+        navigator.vibrate([350, 150, 350, 150, 350]);
+      }
+      alertBannerTitle.textContent = (kind === 'duha' ? '🕌 ' : '🔔 ') + title;
+      alertBannerDesc.textContent = body;
+      alertBanner.classList.toggle('duha-alert', kind === 'duha');
+
+      if (kind === 'duha') {
+        alertBannerActions.innerHTML = `
+          <button class="btn-duha-banner-done" type="button" onclick="markDuhaDoneFromBanner()">✓ تمت الصلاة</button>
+          <button class="btn-duha-banner-snooze" type="button" onclick="snoozeDuha10Mins()">⏳ غفوة 10 دقائق</button>
+          <button class="btn-stop-alert" type="button" onclick="dismissAlertBanner()">إيقاف الصوت</button>
+        `;
+      } else {
+        alertBannerActions.innerHTML = `
+          <button class="btn-stop-alert" type="button" onclick="dismissAlertBanner()">إيقاف الصوت وإغلاق</button>
+        `;
+      }
+
+      alertBanner.classList.add('active');
+
+      if ('Notification' in window && Notification.permission === 'granted') {
+        try {
+          new Notification(title, {
+            body: body,
+            icon: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAACj0lEQVR42u3cwY3CQBQFQSdDZIRPECYBJC4zhu8upLov49cWGGmPx/N1QtXhEBAACAAEAAIAAYAAQAAgABAACAAEAAIAAYAAQAAgABAACAAEAAIAAYAAQAAgABAACAAEAAIAAYAAQAAgABAACAAEAAIAAYAAQAAgABAACAAEAAIAAYAAQAAgABAACAAEgAAcAgIAAcA3n14CIDn8O8QgAJYMf2oEAmDp+KdFIACWj39SBAJgy/inRCAAto1fAKTHPyECASAA2PkSANnxC4D0+AVAevwCID1+AWD8AqA4fgFg/AJAAALA+AWA8QsA4xcAxi8AjF8AGL8AGDt+AeDuLwCMXwAYvwAwfgFg/ALA+AWA8QsA4xcAfugSAO7+AvjJMIzf+G8ZQOWiGr8Alo3C+I1/fACVi2z8Atg2CuNvjz8fwD9fdOMXwGXD8KxfAPnPxO7+Ash/KTR+AeS/GBq/APJPRoxfAPmnI8YvgPzjQeMXgOfj3osAROA9CMAPRf5+AYjA3V8A2QBWjMn4BZCNwPgFkI3A+AWQjcD4BZCNwPgFkI3A+AWQjcCzfgGkIzB+AWQjMH4BpCMwfgGIwPgFIALjF4AIjF8AIjB+AYjA+AUgAgEIQATGLwARGL8ARGD8AhCB8QtABMYvABEYvwDSEbgGAkhH4PwF4B9vIYBaBM5bANkInLMAshE4XwFkI3CuAshG4DwFkI3AOQogG4HzE0A2BGcmgGwEzkoAuRiciQBAACAAEAAIAAQAAgABgABAACAAEAAIAAQAAgABgABAACAAEAAIAAQAAgABgABAACAAEAAIAAQAAgABgAAQgENAACAAEAAIAAQAAgABgABAACAAEAAIAAQAAgABgABgjjfZCMAnrxINKQAAAABJRU5ErkJggg==',
+            silent: false
+          });
+        } catch (e) {}
+      }
+    }
+
+    window.dismissAlertBanner = dismissAlertBanner;
+
+    document.getElementById('btnTestSound').addEventListener('click', async () => {
+      await requestPermissions();
+      sendSystemNotification('تجربة نغمة المهام', 'اضغط إيقاف الصوت لإيقاف النغمة', 'task');
+    });
+
+    document.getElementById('btnTestDuhaSound').addEventListener('click', async () => {
+      await requestPermissions();
+      sendSystemNotification('تذكير صلاة الضحى', 'حان الآن وقت فراغك لصلاة الضحى تقبل الله منك!', 'duha');
+    });
+
+    function formatTime12h(hhmm) {
+      if (!hhmm) return '';
+      const [hStr, mStr] = hhmm.split(':');
+      let h = parseInt(hStr, 10);
+      const period = h < 12 ? 'ص' : 'م';
+      if (h === 0) h = 12;
+      else if (h > 12) h -= 12;
+      return `${String(h).padStart(2, '0')}:${mStr} ${period}`;
+    }
+
+    // ================= DUHA PRAYER & QUICK PERIOD GRID LOGIC =================
+    function saveDuhaData() {
+      localStorage.setItem(DUHA_KEY, JSON.stringify(duhaData));
+      renderDuhaCard();
+    }
+
+    function getEffectiveDuhaToday() {
+      const now = new Date();
+      const todayKey = getLocalTodayKey(now);
+      const dayIdx = now.getDay();
+      const dayName = ARABIC_DAYS[dayIdx];
+      const isWorkDay = WORK_DAYS.includes(dayIdx);
+      const hasOverride = (duhaData.overrideDate === todayKey && Boolean(duhaData.overrideTime));
+
+      const periods = computeSchoolPeriods(duhaData);
+      const dayFreeList = (duhaData.freePeriods && duhaData.freePeriods[String(dayIdx)]) || [];
+      const chosenPeriod = resolveBestPeriodForDay(dayFreeList, periods);
+
+      const baseTime = chosenPeriod ? chosenPeriod.reminderHHMM : (duhaData.days[String(dayIdx)] || '');
+      const effectiveTime = hasOverride ? duhaData.overrideTime : baseTime;
+      const isDoneToday = (duhaData.doneDate === todayKey);
+
+      return {
+        todayKey,
+        dayIdx,
+        dayName,
+        isWorkDay,
+        hasOverride,
+        chosenPeriod: hasOverride ? null : chosenPeriod,
+        baseTime,
+        effectiveTime,
+        isDoneToday,
+        periods
+      };
+    }
+
+    function renderDuhaCard() {
+      const info = getEffectiveDuhaToday();
+      const soundSummary = describeSoundSummary('duha');
+
+      if (info.isDoneToday) {
+        duhaTabBadge.textContent = '✓ تمت';
+        duhaTabBadge.classList.add('duha-done');
+      } else if (info.effectiveTime) {
+        duhaTabBadge.textContent = formatTime12h(info.effectiveTime);
+        duhaTabBadge.classList.remove('duha-done');
+      } else {
+        duhaTabBadge.textContent = '--';
+        duhaTabBadge.classList.remove('duha-done');
+      }
+
+      duhaCard.classList.toggle('completed', info.isDoneToday);
+
+      if (info.hasOverride) {
+        duhaDayChip.textContent = `${info.dayName} • تعديل استثنائي لليوم`;
+        duhaDayChip.classList.add('override');
+      } else {
+        duhaDayChip.textContent = info.isWorkDay ? info.dayName : `${info.dayName} (إجازة)`;
+        duhaDayChip.classList.remove('override');
+      }
+
+      if (info.effectiveTime) {
+        const periodBadgeHtml = info.chosenPeriod
+          ? `<span class="duha-period-tag">الحصة ${info.chosenPeriod.periodNum}</span>`
+          : '';
+        duhaTimeDisplay.innerHTML = `⏰ ${formatTime12h(info.effectiveTime)} ${periodBadgeHtml}`;
+        duhaTimeDisplay.classList.remove('unset');
+        const backupNote = (duhaData.backupEnabled && duhaData.backupTime)
+          ? `<br>🔔 تنبيه احتياطي قبل الظهر: ${formatTime12h(duhaData.backupTime)}`
+          : '';
+        duhaSubInfo.innerHTML = `🎵 ${soundSummary}${backupNote}`;
+      } else if (!info.isWorkDay) {
+        duhaTimeDisplay.textContent = 'لا يوجد جدول حصص اليوم';
+        duhaTimeDisplay.classList.add('unset');
+        duhaSubInfo.textContent = 'يمكنك الضغط على "تعديل لليوم فقط" لضبط منبه اليوم إن رغبت';
+      } else {
+        duhaTimeDisplay.textContent = 'لم تُحدد حصصك الفارغة اليوم بعد';
+        duhaTimeDisplay.classList.add('unset');
+        duhaSubInfo.textContent = 'اضغط على الزر بالأسفل لاختيار حصتك الفارغة بلمسة واحدة';
+      }
+
+      if (info.isDoneToday) {
+        btnToggleDuhaDone.textContent = 'تمت صلاة الضحى اليوم ✓';
+        btnToggleDuhaDone.classList.add('is-done');
+      } else {
+        btnToggleDuhaDone.textContent = '✓ تمت الصلاة';
+        btnToggleDuhaDone.classList.remove('is-done');
+      }
+
+      duhaWeekSummaryList.innerHTML = WORK_DAYS.map(dIdx => {
+        const dayFree = (duhaData.freePeriods && duhaData.freePeriods[String(dIdx)]) || [];
+        const chosen = resolveBestPeriodForDay(dayFree, info.periods);
+        const timeStr = chosen
+          ? `${formatTime12h(chosen.reminderHHMM)} (ح${chosen.periodNum})`
+          : (duhaData.days[String(dIdx)] ? formatTime12h(duhaData.days[String(dIdx)]) : 'غير محدد');
+        const isToday = (dIdx === info.dayIdx);
+        return `
+          <div class="week-summary-item ${isToday ? 'today-highlight' : ''}">
+            <span>${ARABIC_DAYS[dIdx]} ${isToday ? '(اليوم)' : ''}</span>
+            <span>${timeStr}</span>
+          </div>
+        `;
+      }).join('');
+    }
+
+    btnToggleDuhaDone.addEventListener('click', async () => {
+      await requestPermissions();
+      const todayKey = getLocalTodayKey();
+      if (duhaData.doneDate === todayKey) {
+        duhaData.doneDate = '';
+        showToast('تم إلغاء علامة الإتمام لليوم');
+      } else {
+        duhaData.doneDate = todayKey;
+        duhaData.snoozeUntilTs = 0;
+        dismissAlertBanner();
+        showToast('تقبل الله طاعتك! تم تسجيل صلاة الضحى لليوم ✓');
+      }
+      saveDuhaData();
+    });
+
+    window.markDuhaDoneFromBanner = function() {
+      duhaData.doneDate = getLocalTodayKey();
+      duhaData.snoozeUntilTs = 0;
+      saveDuhaData();
+      dismissAlertBanner();
+      showToast('تقبل الله طاعتك! تم تسجيل صلاة الضحى ✓');
+    };
+
+    window.snoozeDuha10Mins = function() {
+      duhaData.snoozeUntilTs = Date.now() + 10 * 60 * 1000;
+      saveDuhaData();
+      dismissAlertBanner();
+      showToast('تم تأجيل تذكير صلاة الضحى 10 دقائق');
+    };
+
+    // ================= QUICK PERIOD GRID MODAL RENDERING =================
+    function renderBellPreviewAndGrid() {
+      if (!draftBellConfig || !draftFreePeriods) return;
+      const periods = computeSchoolPeriods(draftBellConfig);
+      const breakAfter = parseInt(draftBellConfig.breakAfterPeriod, 10) || 0;
+      const bDur = parseInt(draftBellConfig.breakDuration, 10) || 20;
+
+      let previewHtml = '';
+      periods.forEach(p => {
+        previewHtml += `<span class="preview-period-pill">ح${p.periodNum}: ${formatTime12h(p.startHHMM)}</span>`;
+        if (breakAfter === p.periodNum && bDur > 0) {
+          previewHtml += `<span class="preview-period-pill break">فسحة ${bDur}د</span>`;
+        }
+      });
+      bellPreviewStrip.innerHTML = previewHtml;
+
+      duhaDaysGridContainer.innerHTML = WORK_DAYS.map(dIdx => {
+        const selectedNums = draftFreePeriods[String(dIdx)] || [];
+        const chosen = resolveBestPeriodForDay(selectedNums, periods);
+
+        const resultBadge = chosen
+          ? `<span class="period-day-result">⏰ ${formatTime12h(chosen.reminderHHMM)} (ح${chosen.periodNum})</span>`
+          : `<span class="period-day-result empty">اختر حصة فارغة</span>`;
+
+        const chipsHtml = periods.map(p => {
+          const isSelected = selectedNums.includes(p.periodNum);
+          const isPrimary = chosen && chosen.periodNum === p.periodNum;
+          const cls = isPrimary ? 'selected-primary' : (isSelected ? 'selected-secondary' : '');
+          return `
+            <button type="button" class="period-chip-btn ${cls}" onclick="toggleGridPeriod(${dIdx}, ${p.periodNum})">
+              ح${p.periodNum}
+            </button>
+          `;
+        }).join('');
+
+        return `
+          <div class="period-day-card">
+            <div class="period-day-top">
+              <span class="period-day-title">${ARABIC_DAYS[dIdx]}</span>
+              ${resultBadge}
+            </div>
+            <div class="period-chips-row">
+              ${chipsHtml}
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    window.toggleGridPeriod = function(dayIdx, periodNum) {
+      if (!draftFreePeriods) return;
+      const key = String(dayIdx);
+      const arr = draftFreePeriods[key] || [];
+      const pos = arr.indexOf(periodNum);
+      if (pos !== -1) {
+        arr.splice(pos, 1);
+      } else {
+        arr.push(periodNum);
+      }
+      draftFreePeriods[key] = arr;
+      renderBellPreviewAndGrid();
+    };
+
+    periodDurInput.addEventListener('input', () => {
+      if (!draftBellConfig) return;
+      const val = parseInt(periodDurInput.value, 10);
+      if (val >= 15 && val <= 120) {
+        draftBellConfig.periodDuration = val;
+        renderBellPreviewAndGrid();
+      }
+    });
+
+    breakAfterSelect.addEventListener('change', () => {
+      if (!draftBellConfig) return;
+      draftBellConfig.breakAfterPeriod = parseInt(breakAfterSelect.value, 10) || 0;
+      renderBellPreviewAndGrid();
+    });
+
+    breakDurInput.addEventListener('input', () => {
+      if (!draftBellConfig) return;
+      const val = parseInt(breakDurInput.value, 10);
+      if (val >= 0 && val <= 90) {
+        draftBellConfig.breakDuration = val;
+        renderBellPreviewAndGrid();
+      }
+    });
+
+    document.querySelectorAll('.buffer-pill').forEach(pill => {
+      pill.addEventListener('click', () => {
+        if (!draftBellConfig) return;
+        draftBellConfig.bufferMinutes = parseInt(pill.dataset.buf, 10) || 0;
+        document.querySelectorAll('.buffer-pill').forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+        renderBellPreviewAndGrid();
+      });
+    });
+
+    document.getElementById('btnOpenDuhaSchedule').addEventListener('click', async () => {
+      await requestPermissions();
+      draftBellConfig = {
+        firstPeriodStart: duhaData.firstPeriodStart || '07:30',
+        periodDuration: duhaData.periodDuration || 40,
+        breakAfterPeriod: (duhaData.breakAfterPeriod !== undefined) ? duhaData.breakAfterPeriod : 3,
+        breakDuration: (duhaData.breakDuration !== undefined) ? duhaData.breakDuration : 20,
+        bufferMinutes: (duhaData.bufferMinutes !== undefined) ? duhaData.bufferMinutes : 5
+      };
+      draftFreePeriods = {
+        '0': [...((duhaData.freePeriods && duhaData.freePeriods['0']) || [])],
+        '1': [...((duhaData.freePeriods && duhaData.freePeriods['1']) || [])],
+        '2': [...((duhaData.freePeriods && duhaData.freePeriods['2']) || [])],
+        '3': [...((duhaData.freePeriods && duhaData.freePeriods['3']) || [])],
+        '4': [...((duhaData.freePeriods && duhaData.freePeriods['4']) || [])]
+      };
+
+      firstPeriodTimeWidget.setValue(draftBellConfig.firstPeriodStart);
+      periodDurInput.value = draftBellConfig.periodDuration;
+      breakAfterSelect.value = String(draftBellConfig.breakAfterPeriod);
+      breakDurInput.value = draftBellConfig.breakDuration;
+
+      document.querySelectorAll('.buffer-pill').forEach(p => {
+        p.classList.toggle('active', parseInt(p.dataset.buf, 10) === draftBellConfig.bufferMinutes);
+      });
+
+      duhaBackupCheck.checked = Boolean(duhaData.backupEnabled);
+      duhaBackupTimeWidget.setValue(duhaData.backupTime || '11:15');
+
+      renderBellPreviewAndGrid();
+      duhaScheduleModal.classList.add('open');
+    });
+
+    document.getElementById('btnCloseDuhaSchedule').addEventListener('click', () => {
+      duhaScheduleModal.classList.remove('open');
+    });
+    duhaScheduleModal.addEventListener('click', (e) => {
+      if (e.target === duhaScheduleModal) duhaScheduleModal.classList.remove('open');
+    });
+
+    document.getElementById('btnSaveDuhaSchedule').addEventListener('click', async () => {
+      await requestPermissions();
+      const firstStart = firstPeriodTimeWidget.getValue() || '07:30';
+      duhaData.firstPeriodStart = firstStart;
+      duhaData.periodDuration = Math.max(20, Math.min(90, parseInt(periodDurInput.value, 10) || 40));
+      duhaData.breakAfterPeriod = parseInt(breakAfterSelect.value, 10) || 0;
+      duhaData.breakDuration = Math.max(0, Math.min(60, parseInt(breakDurInput.value, 10) || 20));
+      duhaData.bufferMinutes = draftBellConfig ? draftBellConfig.bufferMinutes : 5;
+      duhaData.freePeriods = draftFreePeriods || duhaData.freePeriods;
+
+      const periods = computeSchoolPeriods(duhaData);
+      WORK_DAYS.forEach(dIdx => {
+        const chosen = resolveBestPeriodForDay(duhaData.freePeriods[String(dIdx)], periods);
+        duhaData.days[String(dIdx)] = chosen ? chosen.reminderHHMM : '';
+      });
+
+      duhaData.backupEnabled = duhaBackupCheck.checked;
+      duhaData.backupTime = duhaBackupTimeWidget.getValue() || '11:15';
+      duhaData.notifiedDate = '';
+      duhaData.backupNotifiedDate = '';
+
+      saveDuhaData();
+      duhaScheduleModal.classList.remove('open');
+      showToast('تم حفظ شبكة الحصص وجدول صلاة الضحى بنجاح!');
+    });
+
+    // Open One-Day Exception Modal
+    document.getElementById('btnEditDuhaToday').addEventListener('click', async () => {
+      await requestPermissions();
+      const info = getEffectiveDuhaToday();
+      if (info.effectiveTime) {
+        duhaTodayTimeWidget.setValue(info.effectiveTime);
+      } else {
+        const d = new Date(Date.now() + 10 * 60000);
+        duhaTodayTimeWidget.setValue(`${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`);
+      }
+      duhaTodayModal.classList.add('open');
+      setTimeout(() => duhaTodayTimeWidget.focusHour(), 100);
+    });
+
+    document.querySelectorAll('.duha-preset').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const mins = parseInt(btn.dataset.mins, 10);
+        const d = new Date(Date.now() + mins * 60000);
+        duhaTodayTimeWidget.setValue(`${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`);
+      });
+    });
+
+    document.getElementById('btnSaveDuhaToday').addEventListener('click', async () => {
+      await requestPermissions();
+      const val = duhaTodayTimeWidget.getValue();
+      if (!val) {
+        showToast('اكتب الساعة والدقيقة المناسبة لليوم أولاً');
+        return;
+      }
+      const todayKey = getLocalTodayKey();
+      duhaData.overrideDate = todayKey;
+      duhaData.overrideTime = val;
+      duhaData.notifiedDate = '';
+      duhaData.snoozeUntilTs = 0;
+      saveDuhaData();
+      duhaTodayModal.classList.remove('open');
+      showToast(`تم ضبط منبه صلاة الضحى لليوم فقط الساعة ${formatTime12h(val)}`);
+    });
+
+    document.getElementById('btnResetDuhaToday').addEventListener('click', () => {
+      duhaData.overrideDate = '';
+      duhaData.overrideTime = '';
+      duhaData.notifiedDate = '';
+      duhaData.snoozeUntilTs = 0;
+      saveDuhaData();
+      duhaTodayModal.classList.remove('open');
+      showToast('تمت العودة لجدول الحصص المعتاد');
+    });
+
+    document.getElementById('btnCloseDuhaToday').addEventListener('click', () => {
+      duhaTodayModal.classList.remove('open');
+    });
+    duhaTodayModal.addEventListener('click', (e) => {
+      if (e.target === duhaTodayModal) duhaTodayModal.classList.remove('open');
+    });
+
+    // ================= REGULAR & FLEXIBLE TASKS LOGIC =================
+    function saveTasks() {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(tasks));
+      renderTasks();
+    }
+
+    function splitTaskLines(rawText) {
+      const lines = (rawText || '').split(/\r?\n/);
+      const mainLine = lines[0] || '';
+      const extraText = lines.slice(1).join('\n').trim();
+      return { mainLine, extraText };
+    }
+
+    function getTaskFlexHours(task) {
+      if (task.flexIntervalHours !== undefined && task.flexIntervalHours !== null) {
+        return parseInt(task.flexIntervalHours, 10);
+      }
+      return parseInt(localStorage.getItem(NUDGE_INTERVAL_KEY) || '2', 10);
+    }
+
+    function renderTasks() {
+      tasks.sort((a, b) => {
+        if (a.done !== b.done) return a.done ? 1 : -1;
+        if (Boolean(a.highPriority) !== Boolean(b.highPriority)) return a.highPriority ? -1 : 1;
+        if (Boolean(a.isFlexible) !== Boolean(b.isFlexible)) return a.isFlexible ? 1 : -1;
+        return (a.time || '').localeCompare(b.time || '');
+      });
+
+      const total = tasks.length;
+      const doneCount = tasks.filter(t => t.done).length;
+      const remainingCount = total - doneCount;
+      const flexPendingCount = tasks.filter(t => !t.done && t.isFlexible).length;
+      const pct = total === 0 ? 0 : Math.round((doneCount / total) * 100);
+
+      progressTextEl.textContent = `الإنجاز: ${doneCount} من ${total}`;
+      flexSummaryTextEl.textContent = `مرنة متبقية: ${flexPendingCount}`;
+      progressFillEl.style.width = `${pct}%`;
+      tasksTabBadge.textContent = String(remainingCount);
+
+      const filtered = tasks.filter(t => {
+        if (currentFilter === 'flexible') return t.isFlexible;
+        if (currentFilter === 'timed') return !t.isFlexible;
+        return true;
+      });
+
+      if (filtered.length === 0) {
+        taskListEl.innerHTML = `
+          <div class="empty-state">
+            <h3>لا توجد مهام في هذه القائمة</h3>
+            <div>اضغط على <strong>(+ إضافة مهمة)</strong> لإضافة مهمة مرنة خلال اليوم أو مهمة بوقت محدد</div>
+          </div>
+        `;
+        return;
+      }
+
+      taskListEl.innerHTML = filtered.map(task => {
+        const { mainLine, extraText } = splitTaskLines(task.title);
+        const flexHrs = getTaskFlexHours(task);
+        const flexLabel = flexHrs > 0
+          ? `⚡ مرنة • تنبيه كل ${formatHoursArabic(flexHrs)}`
+          : `⚡ مرنة • بدون تنبيه`;
+        return `
+          <div class="task-card ${task.done ? 'done' : ''}">
+            <input class="task-check" type="checkbox" ${task.done ? 'checked' : ''} onchange="toggleTask(${task.id})" />
+            <div class="task-info">
+              <div class="task-title">${escapeHtml(mainLine)}</div>
+              ${extraText ? `<div class="task-extra-lines">${escapeHtml(extraText)}</div>` : ''}
+              <div class="task-meta">
+                ${task.isFlexible
+                  ? `<span class="time-badge flexible">${flexLabel}</span>`
+                  : `<span class="time-badge">⏰ ${formatTime12h(task.time)}</span>`
+                }
+                ${task.highPriority ? `<span class="priority-badge">⭐ أولوية</span>` : ''}
+              </div>
+            </div>
+            <div class="task-card-actions">
+              ${task.isFlexible && !task.done
+                ? `<button class="btn-assign-time" type="button" onclick="openAssignTimeModal(${task.id})">تحديد وقت</button>`
+                : ''
+              }
+              <button class="btn-delete" type="button" onclick="confirmDeleteTask(${task.id})" aria-label="حذف">✕</button>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function escapeHtml(str) {
+      return str.replace(/[&<>"']/g, m => ({
+        '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+      }[m]));
+    }
+
+    window.toggleTask = function(id) {
+      const t = tasks.find(x => x.id === id);
+      if (t) {
+        t.done = !t.done;
+        if (!t.done && t.isFlexible) {
+          t.lastNudgeTs = Date.now();
+        }
+        saveTasks();
+      }
+    };
+
+    window.confirmDeleteTask = function(id) {
+      const t = tasks.find(x => x.id === id);
+      if (!t) return;
+      const { mainLine } = splitTaskLines(t.title);
+      askConfirmation({
+        icon: '🗑️',
+        title: 'هل تريد حذف المهمة؟',
+        message: `سيتم حذف مهمة "${mainLine}" نهائياً من قائمتك.`,
+        confirmText: 'نعم، احذف المهمة',
+        onConfirm: () => {
+          tasks = tasks.filter(x => x.id !== id);
+          saveTasks();
+          showToast('تم حذف المهمة');
+        }
+      });
+    };
+
+    document.querySelectorAll('.filter-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        currentFilter = chip.dataset.filter;
+        renderTasks();
+      });
+    });
+
+    // Flexible interval pills inside Add Task Modal
+    function setFlexIntervalSelection(hoursVal) {
+      selectedFlexHours = parseInt(hoursVal, 10);
+      document.querySelectorAll('#flexIntervalPills .flex-pill-btn').forEach(btn => {
+        btn.classList.toggle('active', parseInt(btn.dataset.hours, 10) === selectedFlexHours);
+      });
+    }
+
+    document.querySelectorAll('#flexIntervalPills .flex-pill-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        setFlexIntervalSelection(btn.dataset.hours);
+      });
+    });
+
+    function setTaskMode(mode) {
+      selectedMode = mode;
+      if (mode === 'flexible') {
+        optFlexible.classList.add('selected');
+        optTimed.classList.remove('selected');
+        flexibleIntervalGroup.style.display = 'block';
+        timeInputGroup.style.display = 'none';
+      } else {
+        optTimed.classList.add('selected');
+        optFlexible.classList.remove('selected');
+        flexibleIntervalGroup.style.display = 'none';
+        timeInputGroup.style.display = 'block';
+        setTimeout(() => taskTimeWidget.focusHour(), 80);
+      }
+    }
+
+    optFlexible.addEventListener('click', () => setTaskMode('flexible'));
+    optTimed.addEventListener('click', () => setTaskMode('timed'));
+
+    function setTimeOffset(minutes) {
+      const d = new Date(Date.now() + minutes * 60000);
+      const hh = String(d.getHours()).padStart(2, '0');
+      const mm = String(d.getMinutes()).padStart(2, '0');
+      taskTimeWidget.setValue(`${hh}:${mm}`);
+    }
+
+    document.getElementById('btnOpenModal').addEventListener('click', async () => {
+      await requestPermissions();
+      assigningTaskId = null;
+      modalHeading.textContent = 'إضافة مهمة جديدة';
+      taskTitleInput.value = '';
+      taskTitleInput.disabled = false;
+      taskPriorityInput.checked = false;
+      typeSelectorGroup.style.display = 'block';
+      priorityGroup.style.display = 'block';
+      const defaultHrs = parseInt(localStorage.getItem(NUDGE_INTERVAL_KEY) || '2', 10);
+      setFlexIntervalSelection(defaultHrs);
+      setTaskMode('flexible');
+      setTimeOffset(10);
+      taskModal.classList.add('open');
+      setTimeout(() => taskTitleInput.focus(), 100);
+    });
+
+    window.openAssignTimeModal = async function(id) {
+      await requestPermissions();
+      const t = tasks.find(x => x.id === id);
+      if (!t) return;
+      assigningTaskId = id;
+      modalHeading.textContent = 'تحديد وقت للمهمة المرنة';
+      taskTitleInput.value = t.title;
+      taskTitleInput.disabled = true;
+      typeSelectorGroup.style.display = 'none';
+      flexibleIntervalGroup.style.display = 'none';
+      priorityGroup.style.display = 'none';
+      setTaskMode('timed');
+      setTimeOffset(15);
+      taskModal.classList.add('open');
+      setTimeout(() => taskTimeWidget.focusHour(), 100);
+    };
+
+    document.getElementById('btnCloseModal').addEventListener('click', () => {
+      taskModal.classList.remove('open');
+    });
+
+    taskModal.addEventListener('click', (e) => {
+      if (e.target === taskModal) taskModal.classList.remove('open');
+    });
+
+    document.querySelectorAll('.preset-btn[data-mins]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        setTimeOffset(parseInt(btn.dataset.mins, 10));
+      });
+    });
+
+    document.getElementById('btnSaveTask').addEventListener('click', async () => {
+      await requestPermissions();
+      const time = taskTimeWidget.getValue();
+
+      if (assigningTaskId !== null) {
+        if (!time) {
+          showToast('اكتب الساعة والدقيقة أولاً');
+          return;
+        }
+        const t = tasks.find(x => x.id === assigningTaskId);
+        if (t) {
+          t.isFlexible = false;
+          t.time = time;
+          t.notifiedDate = '';
+          saveTasks();
+          showToast(`تم ضبط التنبيه الساعة ${formatTime12h(time)}`);
+        }
+        taskModal.classList.remove('open');
+        return;
+      }
+
+      const title = taskTitleInput.value.trim();
+      if (!title) {
+        showToast('اكتب عنوان المهمة أولاً');
+        return;
+      }
+      const isFlexible = (selectedMode === 'flexible');
+      if (!isFlexible && !time) {
+        showToast('اكتب الساعة والدقيقة للتنبيه');
+        return;
+      }
+
+      const nowTs = Date.now();
+      tasks.push({
+        id: nowTs,
+        title,
+        isFlexible,
+        flexIntervalHours: isFlexible ? selectedFlexHours : 0,
+        lastNudgeTs: isFlexible ? nowTs : 0,
+        highPriority: taskPriorityInput.checked,
+        time: isFlexible ? '' : time,
+        done: false,
+        notifiedDate: ''
+      });
+      saveTasks();
+      taskModal.classList.remove('open');
+      if (isFlexible) {
+        if (selectedFlexHours > 0) {
+          showToast(`تمت إضافة المهمة • سيتم تذكيرك بعد ${formatHoursArabic(selectedFlexHours)}`);
+        } else {
+          showToast('تمت إضافة المهمة المرنة لقائمة اليوم');
+        }
+      } else {
+        showToast(`تم ضبط التذكير الساعة ${formatTime12h(time)}`);
+      }
+    });
+
+    // ================= MASTER 1-SECOND SCHEDULER =================
+    setInterval(() => {
+      const now = new Date();
+      const nowMs = now.getTime();
+      const hh = String(now.getHours()).padStart(2, '0');
+      const mm = String(now.getMinutes()).padStart(2, '0');
+      const currentHHMM = `${hh}:${mm}`;
+      const todayKey = getLocalTodayKey(now);
+
+      if (lastRenderedDateKey !== todayKey) {
+        lastRenderedDateKey = todayKey;
+        updateHeaderDate();
+        renderDuhaCard();
+      }
+
+      // 1. Check Duha Prayer Main Schedule
+      const duhaInfo = getEffectiveDuhaToday();
+      if (!duhaInfo.isDoneToday && duhaInfo.effectiveTime && duhaInfo.effectiveTime === currentHHMM && duhaData.notifiedDate !== todayKey) {
+        duhaData.notifiedDate = todayKey;
+        duhaData.snoozeUntilTs = 0;
+        saveDuhaData();
+        const periodInfo = duhaInfo.chosenPeriod ? ` (الحصة ${duhaInfo.chosenPeriod.periodNum})` : '';
+        sendSystemNotification(
+          'حان وقت صلاة الضحى',
+          `موعد فراغك اليوم (${formatTime12h(duhaInfo.effectiveTime)})${periodInfo} — صلاة الأوابين`,
+          'duha'
+        );
+      }
+
+      // 2. Check Duha 10-Minute Snooze
+      if (!duhaInfo.isDoneToday && duhaData.snoozeUntilTs > 0 && nowMs >= duhaData.snoozeUntilTs) {
+        duhaData.snoozeUntilTs = 0;
+        saveDuhaData();
+        sendSystemNotification(
+          'تذكير صلاة الضحى (بعد الغفوة)',
+          'هل تفرغت الآن لأداء صلاة الضحى؟',
+          'duha'
+        );
+      }
+
+      // 3. Check Duha Backup Alert before Dhuhr
+      if (
+        !duhaInfo.isDoneToday &&
+        duhaData.backupEnabled &&
+        duhaData.backupTime &&
+        duhaData.backupTime === currentHHMM &&
+        duhaData.backupNotifiedDate !== todayKey &&
+        (duhaInfo.isWorkDay || duhaInfo.hasOverride)
+      ) {
+        duhaData.backupNotifiedDate = todayKey;
+        saveDuhaData();
+        sendSystemNotification(
+          'تنبيه أخير لصلاة الضحى',
+          'اقترب وقت الظهر ولم تُسجّل صلاة الضحى اليوم بعد',
+          'duha'
+        );
+      }
+
+      // 4. Check Regular Timed Tasks
+      let changed = false;
+      tasks.forEach(task => {
+        if (!task.done && !task.isFlexible && task.time === currentHHMM && task.notifiedDate !== todayKey) {
+          task.notifiedDate = todayKey;
+          changed = true;
+          const { mainLine } = splitTaskLines(task.title);
+          sendSystemNotification('تذكير: ' + mainLine, `موعد المهمة الآن (${formatTime12h(task.time)})`, 'task');
+        }
+      });
+
+      // 5. Check Per-Task Flexible Reminders (8 AM - 10 PM)
+      const hourNow = now.getHours();
+      if (hourNow >= 8 && hourNow < 22) {
+        const dueFlexTasks = [];
+        tasks.forEach(task => {
+          if (!task.done && task.isFlexible) {
+            const intervalHrs = getTaskFlexHours(task);
+            if (intervalHrs > 0) {
+              if (!task.lastNudgeTs) {
+                task.lastNudgeTs = nowMs;
+                changed = true;
+              } else if (nowMs - task.lastNudgeTs >= intervalHrs * 3600 * 1000) {
+                task.lastNudgeTs = nowMs;
+                changed = true;
+                dueFlexTasks.push(task);
+              }
+            }
+          }
+        });
+
+        if (dueFlexTasks.length > 0) {
+          const { mainLine } = splitTaskLines(dueFlexTasks[0].title);
+          if (dueFlexTasks.length === 1) {
+            sendSystemNotification(
+              `تذكير بمهمة مرنة: ${mainLine}`,
+              'هل حان الوقت المناسب لتنفيذها الآن؟',
+              'task'
+            );
+          } else {
+            sendSystemNotification(
+              `لديك ${dueFlexTasks.length} مهام مرنة بانتظارك`,
+              `أهمها: ${mainLine}`,
+              'task'
+            );
+          }
+        }
+      }
+
+      if (changed) saveTasks();
+    }, 1000);
+
+    loadSavedAudioFiles();
+    renderDuhaCard();
+    renderTasks();
+  </script>
+</body>
+</html>
